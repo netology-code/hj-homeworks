@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  color: #333333;
+  background-color: #76c7c0;
+}
+
+button {
+  background-color: #e8645a;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  transition: 0.6s;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #e8645a;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.article-block {
+  background-color: #f3f3f3;
+  padding: 50px;
+  height: 100%;
+}
+
+.article-header {
+  font-weight: 600;
+  font-size: 32px;
+  color: #7f8c8c;
+}
+
+.article-description {
+  height: 125px;
+  font-size: 18px;
+}
+
+.article-description::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 3px;
+  margin-right: 15px;
+  background: #76b7b1;
+  float: left;
+}
+
+.article-gallery {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+.article-gallery img {
+  min-width: 100%;
+  min-height: 100%;
+  display: block;
+}
+
+.article-gallery img::after {
+  content: attr(alt);
+  display: block;
+}
+
+#prevPhoto {
+  left: 0;
+}
+
+#prevPhoto::before {
+  content: "« ";
+  font-size: 35px;
+  line-height: 22px;
+  vertical-align: text-top;
+}
+
+#nextPhoto {
+  right: 0;
+}
+
+#nextPhoto::after {
+  content: " »";
+  font-size: 35px;
+  line-height: 22px;
+  vertical-align: text-top;
+}
+
+.article-text {
+  padding: 25px 50px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-item {
+  margin-bottom: 25px;
+  text-indent: 10px;
+  line-height: 1.5;
+}
+
+.list-item::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  float: left;
+  background-color: #e8645a;
+}
+
+.list-item::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: #83ccc5;
+  vertical-align: middle;
+}
