@@ -1,0 +1,27 @@
+{
+  "name": "hj-homeworks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files '**/*.html' '**/*.css' '**/*.js' '**/*.png' '**/*.jpeg' '**/*.jpg'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netology-code/hj-homeworks.git"
+  },
+  "keywords": [],
+  "contributors": [
+    "Alena Batitskay <batickaya.a@gmail.com>",
+    "Dima Fitiskin <dfitiskin@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/netology-code/hj-homeworks/issues"
+  },
+  "homepage": "https://github.com/netology-code/hj-homeworks#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8"
+  }
+}
