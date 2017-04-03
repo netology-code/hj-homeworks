@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  background: url('../i/drum-machine.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.drum-kit {
+  margin: 0;
+  padding: 0 2em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.drum-kit__drum {
+ cursor: pointer;
+ display: block;
+ width: 30%;
+ text-align: center;
+ padding: 2em 0;
+ margin: .5em 0;
+ border: .5em solid #FFFFFF;
+ border-radius: 35px;
+ color: #FFFFFF;
+ transition: 50ms ease-in;
+ background: rgba(0, 0, 0, 0.7);
+}
+
+.drum-kit__drum:hover {
+  transform: scale(1.1);
+  transition: 50ms ease-in;
+}
+
+
+.drum-kit__drum--active {
+  background: #FFFFFF;
+  color: #000000;
+  transform: scale(1.1);
+}
+
+.drum-kit__drum__key {
+  user-select: none;
+  font-size: 2em;
+  font-weight: bold;
+  display: block;
+}
+
+.drum-kit__drum__type {
+  font-size: 1.4em;
+  font-weight: bold;
+  user-select: none;
+  text-transform: uppercase;
+}

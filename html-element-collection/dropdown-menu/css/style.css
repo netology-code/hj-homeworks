@@ -1,0 +1,123 @@
+@import "reset.min.css";
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Lato', 'Arial', sans-serif;
+background: #DDD url('../i/bg.jpg');
+font-weight: 300;
+font-size: 15px;
+color: #333333;
+-webkit-font-smoothing: antialiased;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+.wrapper-dropdown {
+  /* Size & position */
+  position: relative;
+  width: 200px;
+  margin: 40px auto;
+  padding: 12px 15px;
+
+  /* Styles */
+  background: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* Little arrow */
+.wrapper-dropdown:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -3px;
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: #4cbeff transparent;
+}
+
+/* Size & position */
+.wrapper-dropdown .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+
+  /* Styles */
+  background: #FFFFFF;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-top: none;
+  border-bottom: none;
+  list-style: none;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
+  /* Hiding */
+  max-height: 0;
+  overflow: hidden;
+}
+
+.wrapper-dropdown .dropdown li {
+  padding: 0 10px ;
+}
+
+.wrapper-dropdown .dropdown li a {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  padding: 10px 0;
+  transition: all 0.3s ease-out;
+  border-bottom: 1px solid #e6e8ea;
+}
+
+.wrapper-dropdown .dropdown li:last-of-type a {
+  border: none;
+}
+
+.wrapper-dropdown .dropdown li i {
+  margin-right: 5px;
+  color: inherit;
+  vertical-align: middle;
+}
+
+/* Hover state */
+.wrapper-dropdown .dropdown li:hover a {
+  color: #57a9d9;
+}
+
+/* Active state */
+.wrapper-dropdown.active {
+  border-radius: 5px 5px 0 0;
+  background: #4cbeff;
+  box-shadow: none;
+  border-bottom: none;
+  color: #FFFFFF;
+}
+
+.wrapper-dropdown.active:after {
+  border-color: #82d1ff transparent;
+}
+
+.wrapper-dropdown.active .dropdown {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  max-height: 400px;
+}
