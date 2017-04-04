@@ -1,12 +1,23 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
 html {
 	font-size: 14px;
 }
 
 body {
 	font-family: Myriad Set Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
 	display:flex;
-	justify-content:center;
-	align-items:center;
+	-webkit-box-pack:center;
+	-webkit-justify-content:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	    -ms-flex-align:center;
+	        align-items:center;
 	height:100vh;
 	width:100vw;
 	background-color: #FFFFFF;
@@ -15,28 +26,23 @@ body {
 }
 
 .mediaplayer {
-	background: linear-gradient(left,
-		rgb(70,35,15) 0%,
-
-		rgb(70,35,15) 22%,
-		rgb(75,30,20) 25%,
-
-		rgb(75,30,20) 47%,
-		rgb(78,35,25) 50%,
-
-		rgb(78,35,25) 72%,
-		rgb(85,45,30) 75%,
-
-		rgb(85,45,30) 100%
-	);
+	background: -webkit-linear-gradient(left, rgb(70,35,15) 0%, rgb(70,35,15) 22%, rgb(75,30,20) 25%, rgb(75,30,20) 47%, rgb(78,35,25) 50%, rgb(78,35,25) 72%, rgb(85,45,30) 75%, rgb(85,45,30) 100%);
+	background: linear-gradient(left, rgb(70,35,15) 0%, rgb(70,35,15) 22%, rgb(75,30,20) 25%, rgb(75,30,20) 47%, rgb(78,35,25) 50%, rgb(78,35,25) 72%, rgb(85,45,30) 75%, rgb(85,45,30) 100%);
 	background-size: 50%;
   background-repeat: repeat;
 	box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 	width: auto;
 	max-width: 600px;
 	height: auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 	padding: 20px;
 	box-sizing:border-box;
 	border-radius: 100px;
@@ -53,9 +59,14 @@ audio {
 	margin:10px;
 }
 
+@-webkit-keyframes spinDisc {
+	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+	to 	 {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+
 @keyframes spinDisc {
-	from {transform: rotate(0deg);}
-	to 	 {transform: rotate(360deg);}
+	from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+	to 	 {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
 }
 
 .disc {
@@ -69,7 +80,8 @@ audio {
 }
 
 .mediaplayer.play .disc {
-	animation: spinDisc 2s linear 0.3s infinite forwards;
+	-webkit-animation: spinDisc 2s linear 0.3s infinite forwards;
+	        animation: spinDisc 2s linear 0.3s infinite forwards;
 }
 
 .disc::before,
@@ -95,6 +107,7 @@ audio {
 	width: 90%;
 	height: 90%;
 	background-color: #222222;
+	background: -webkit-linear-gradient(#222222, #222222, #444444, #222222, #222222);
 	background: linear-gradient(#222222, #222222, #444444, #222222, #222222);
 	border-radius: 50%;
 	z-index: 1;
@@ -107,12 +120,19 @@ audio {
 	width: 30px;
 	height: 100px;
 	margin-left: 5px;
-	transform-origin: 15px 15px;
+	-webkit-transform-origin: 15px 15px;
+	    -ms-transform-origin: 15px 15px;
+	        transform-origin: 15px 15px;
+	-webkit-transition: -webkit-transform 0.3s ease-in-out;
+	transition: -webkit-transform 0.3s ease-in-out;
 	transition: transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .mediaplayer.play .stylus {
-	transform: rotate(34deg);
+	-webkit-transform: rotate(34deg);
+	    -ms-transform: rotate(34deg);
+	        transform: rotate(34deg);
 }
 
 .pivot {
@@ -153,14 +173,25 @@ audio {
 	top:76px;
 	left:13px;
 	border-radius:3px;
-	transform-origin: 50% 0;
-	transform: rotate(30deg);
+	-webkit-transform-origin: 50% 0;
+	    -ms-transform-origin: 50% 0;
+	        transform-origin: 50% 0;
+	-webkit-transform: rotate(30deg);
+	    -ms-transform: rotate(30deg);
+	        transform: rotate(30deg);
 }
 
 .controls {
 	margin: 10px;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
 	display:flex;
-	flex-direction:column;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-webkit-flex-direction:column;
+	    -ms-flex-direction:column;
+	        flex-direction:column;
 }
 
 .title {
@@ -181,8 +212,15 @@ audio {
 
 .buttons {
 	margin: 10px 0 10px;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
 	display:flex;
-	flex-direction:row;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-webkit-flex-direction:row;
+	    -ms-flex-direction:row;
+	        flex-direction:row;
 }
 
 .buttons button {
@@ -208,6 +246,7 @@ audio {
 
 .buttons button i::before {
 	text-shadow: 0 0 20px rgba(255,255,255,0.4);
+	-webkit-transition: text-shadow 0.3s ease;
 	transition: text-shadow 0.3s ease;
 }
 
@@ -229,8 +268,15 @@ audio {
 }
 
 .subControls {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 
 
@@ -249,7 +295,8 @@ audio {
 
 .volumeSlider {
   -webkit-appearance: none;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   width: 80px;
   background: transparent;
 }
@@ -313,7 +360,11 @@ audio {
 
 @media (max-width: 450px) {
 	.mediaplayer {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		border-radius: 50px;
 	}
 
@@ -335,8 +386,14 @@ audio {
 	}
 
 	.subControls {
-		flex-direction: row nowrap;
-		justify-content: space-around;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row nowrap;
+		    -ms-flex-direction: row nowrap;
+		        flex-direction: row nowrap;
+		-webkit-justify-content: space-around;
+		    -ms-flex-pack: distribute;
+		        justify-content: space-around;
 		margin-bottom: 20px;
 	}
 }
