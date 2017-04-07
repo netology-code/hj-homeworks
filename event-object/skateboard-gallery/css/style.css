@@ -1,0 +1,44 @@
+@import "normalize.css";
+
+body {
+	font-family: sans-serif;
+  padding: 0px 20px 20px;
+}
+
+.gallery-view {
+	display: block;
+}
+
+.gallery-nav {
+	padding: 0;
+}
+
+.gallery-nav a {
+	display: block;
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin: 10px 10px 10px 0;
+	border: solid 1px #eee;
+  overflow: hidden;
+}
+
+.gallery-nav a:hover {
+	outline: 3px solid #99f;
+}
+
+.gallery-nav a:active {
+	outline: 3px solid #f99;
+}
+
+.gallery-nav a.gallery-current {
+	outline: 3px solid #ff9;
+}
+
+.gallery-nav a img {
+	width: 80px;
+}
+
+.gallery-nav a.gallery-current img {
+	top: -80px;
+}
