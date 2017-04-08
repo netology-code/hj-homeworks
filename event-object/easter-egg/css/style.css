@@ -1,0 +1,137 @@
+@import url("normalize.css");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:800");
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #000000;
+  font: 1.2em/1 Open Sans, Arial;
+  margin: 0;
+}
+
+svg {
+  width: 1000px;
+  height: 170px;
+}
+
+.secret {
+  display: none;
+  font: 5.2em/1 Arial;
+  text-transform: uppercase;
+}
+
+.secret.visible {
+  display: block;
+}
+
+nav {
+  box-sizing: border-box;
+  background: #FFFFFF;
+  padding: 20px;
+  width: 320px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 0 0 0 -320px;
+  -webkit-transition: margin-left 300ms ease-in;
+  transition: margin-left 300ms ease-in;
+}
+
+nav.visible {
+  margin-left: 0;
+}
+
+nav a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  color: #FFFFFF;
+  padding: 20px;
+  -webkit-transition: -webkit-transform 300ms ease-in;
+  transition: -webkit-transform 300ms ease-in;
+  transition: transform 300ms ease-in;
+  transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
+}
+
+nav.visible + main {
+  -webkit-transform: translate3d(320px, 0, 0);
+          transform: translate3d(320px, 0, 0);
+}
+
+.menu-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.menu-icon:after {
+  content: "CTRL+ALT+T";
+  display: inline-block;
+  vertical-align: bottom;
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+.text {
+  fill: none;
+  stroke-width: 4;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+
+.text:nth-child(5n + 1) {
+  stroke: #F2385A;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+
+.text:nth-child(5n + 2) {
+  stroke: #F5A503;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: #E9F1DF;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: #56D9CD;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: #3AA1BF;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
