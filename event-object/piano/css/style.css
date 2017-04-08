@@ -1,5 +1,4 @@
 @import "normalize.css";
-
 * {
   box-sizing: border-box;
 }
@@ -75,12 +74,12 @@ ul .white:active {
 	background: linear-gradient(left, #444 0%,#222 100%);
 }
 
-.a,.g,.f,.d,.c {
-  margin: 0 0 0 -1em;
-}
-
 ul li:first-child {
   border-radius: 5px 0 5px 5px;
+}
+
+ul li:nth-child(n+2) {
+  margin: 0 0 0 -1em;
 }
 
 ul li:last-child {
