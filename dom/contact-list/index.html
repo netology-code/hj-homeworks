@@ -5,14 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="i/favicon.ico" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Задача 1. Список контактов | Домашнее задание к лекции 2.2</title>
+  <script src="./js/list-view.js"></script>
 </head>
 <body>
   <div id="container">
     <div class="list-view">
       <ul class="contacts-list">
-        <!-- Сюда вставляются контакты -->
+        <li data-email="example@gmail.com" data-phone="+7 777 777 77 77">
+          <strong>Пример Примерович</strong>
+        </li>
       </ul>
     </div>
     <div class="details-view">
@@ -24,8 +27,5 @@
       </ul>
     </div>
   </div>
-
-  <script src="js/list-view.js"></script>
-  <script src="js/data.js"></script>
 </body>
 </html>
