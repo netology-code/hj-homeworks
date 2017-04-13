@@ -24,7 +24,7 @@ body {
   width: 230px;
 }
 
-.box i {
+.box button {
   width: 50px;
   height: 50px;
   background: #ED277F;
@@ -37,15 +37,23 @@ body {
   right: 20px;
   top: 150px;
   box-shadow: 0 0 4px 2px rgba(80, 80, 80, 0.1);
+  border: 0;
+  outline: none;
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-.box i:hover {
+.box button:hover {
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.box button:active {
+  -webkit-transform: translateX(2px) translateY(2px);
+      -ms-transform: translateX(2px) translateY(2px);
+          transform: translateX(2px) translateY(2px);
 }
 
 .box h3 {
