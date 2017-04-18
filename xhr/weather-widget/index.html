@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Задача 1. Виджет погоды | Домашнее задание к лекции 2.3</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/ui.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="spin"></div>
+    <div class="weather-body hidden">
+      <div class="main-info">
+         <h1><i class="wi" id="icon"></i></h1>
+         <h2 class="temp0">--</h2>
+      </div>
+      <div class="secondary-info">
+         <h2 class="city"></h2>
+         <h5 class="icon-info">
+           <i class="wi wi-humidity"></i>&nbsp;
+           <span id="humidity">--</span>%&nbsp;&nbsp;
+           <i class="wi wi-strong-wind"></i>&nbsp;
+           <span id="wind">--</span>mph
+         </h5>
+         <h6 class="info">Mostly Cloudy</h6>
+      </div>
+    </div>
+
+    <div class="row" id="days">
+
+    </div>
+  </div>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>

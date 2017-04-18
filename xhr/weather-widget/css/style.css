@@ -1,0 +1,113 @@
+@import "reset.css";
+@import "//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css";
+@import "//cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css";
+@import "//cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.css";
+@import "//fonts.googleapis.com/css?family=Poiret+One|Quicksand:700,400|Julius+Sans+One";
+
+body {
+  background: #545456;
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto auto auto;
+  max-width: 500px;
+  background: rgba(49, 49, 49, 0.34);
+  box-shadow: 0 7px 7px -7px #000;
+  min-height: 260px;
+}
+
+.main-info {
+  width: 33.3%;
+  float: left;
+  text-align: center;
+}
+
+.icon-info {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.info {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+.weather-body {
+  text-transform: none;
+}
+
+.weather-body::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #ffffff;
+  margin: 15px;
+  clear: both;
+}
+
+.city  {
+  text-align: center;
+}
+
+h5 {
+ font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+  text-align: center;
+}
+
+h6 {
+  padding-top: 10px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+}
+
+@-webkit-keyframes clockwise {
+  to {
+    -webkit-transform: rotate(360deg) translatez(0);
+            transform: rotate(360deg) translatez(0);
+  }
+}
+
+@keyframes clockwise {
+  to {
+    -webkit-transform: rotate(360deg) translatez(0);
+            transform: rotate(360deg) translatez(0);
+  }
+}
+
+.spin {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  background-color: transparent;
+  width:  10px;
+  height: 10px;
+  border-radius: 100%;
+  box-shadow:
+     12px -12px hsla(0, 0%, 100%, 0.125),
+     17px     0 hsla(0, 0%, 100%, 0.250),
+     12px  12px hsla(0, 0%, 100%, 0.375),
+        0  17px hsla(0, 0%, 100%, 0.500),
+    -12px  12px hsla(0, 0%, 100%, 0.625),
+    -17px     0 hsla(0, 0%, 100%, 0.750),
+    -12px -12px hsla(0, 0%, 100%, 0.875),
+        0 -17px hsla(0, 0%, 100%, 1.000);
+  -webkit-animation: clockwise 0.75s steps(8, end) infinite;
+          animation: clockwise 0.75s steps(8, end) infinite;
+}
