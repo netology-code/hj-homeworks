@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  padding: 50px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+}
+
+.tabs {
+  width: 450px;
+  min-height: 350px;
+  margin: 0 auto;
+  padding: 25px;
+  background: gray;
+  border-radius: 5px;
+  background-image: url("../i/background.jpg");
+  background-size: cover;
+  box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: no-wrap;
+      -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+li {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 50%;
+  padding: 15px;
+  text-align: center;
+  vertical-align: bottom;
+  background-color: #f1f1f1;
+  font-weight: normal;
+  font-size: 18px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+li.active {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#content {
+  background-color: #f9f9f9;
+  padding: 15px;
+}
+
+h1 {
+  font-weight: normal;
+  color: #333;
+}
+
+p {
+  padding: 15px 0 25px;
+}
+
+input:active,
+input:focus {
+  outline: none;
+}
+
+input:not([type="submit"]) {
+  padding: 10px;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #f1f1f1;
+  font-size: 14px;
+  color: #333;
+}
+
+input[type="submit"] {
+  padding: 10px 15px;
+  background-color: #75c12e;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  margin: 25px 0 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgba(117, 193, 46, 0.8);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#preloader {
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  font-weight: bold;
+}
