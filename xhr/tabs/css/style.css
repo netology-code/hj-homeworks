@@ -20,14 +20,12 @@ body {
   padding: 25px;
   background: gray;
   border-radius: 5px;
-  background-image: url("../i/background.jpg");
+  background-image: url("https://netology-code.github.io/hj-homeworks/xhr/tabs/i/background.jpg");
   background-size: cover;
   box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3);
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+nav {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -46,7 +44,7 @@ ul {
           align-items: center;
 }
 
-li {
+nav a {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
@@ -58,15 +56,17 @@ li {
   background-color: #f1f1f1;
   font-weight: normal;
   font-size: 18px;
+  text-decoration: none;
+  color: currentColor;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
-li:hover {
+nav a:hover {
   cursor: pointer;
 }
 
-li.active {
+nav a.active {
   background-color: #f9f9f9;
   font-weight: bold;
   -webkit-transition: 0.4s;
