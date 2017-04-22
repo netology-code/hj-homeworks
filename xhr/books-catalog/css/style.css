@@ -41,10 +41,9 @@ body::before {
 }
 
 #content li {
-  -webkit-flex-basis: 30%;
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%;
-  min-height: 300px;
+  position: relative;
+  width: 210px;
+  height: 300px;
   -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
@@ -52,9 +51,9 @@ body::before {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
-  min-width: 250px;
   margin: 1%;
   padding: 20px;
+  overflow: hidden;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   z-index: 100;
