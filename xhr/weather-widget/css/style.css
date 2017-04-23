@@ -1,8 +1,8 @@
 @import "reset.css";
-@import "//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css";
-@import "//cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css";
-@import "//cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.css";
-@import "//fonts.googleapis.com/css?family=Poiret+One|Quicksand:700,400|Julius+Sans+One";
+@import "bootstrap.min.css";
+@import "http://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css";
+@import "http://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.css";
+@import "http://fonts.googleapis.com/css?family=Poiret+One|Quicksand:700,400|Julius+Sans+One";
 
 body {
   background: #545456;
