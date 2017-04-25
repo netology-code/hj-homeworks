@@ -20,6 +20,7 @@ body::before {
 
 #content {
   list-style-type: none;
+  padding: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -102,6 +103,15 @@ body::before {
   transition: 0.4s;
 }
 
+#content img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
 h3 {
   font-family: 'Open Sans', sans-serif;
   color: #000;
@@ -123,7 +133,7 @@ h3 + p {
   z-index: 999;
   background-color: #f2f2f2;
   padding: 25px;
-  box-shadow: 0 0 100vw 100vh rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 100vh 100vw rgba(0, 0, 0, 0.8);
 }
 
 #close {
