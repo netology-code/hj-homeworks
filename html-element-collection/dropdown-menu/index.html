@@ -15,5 +15,14 @@
       <li><a href="#">Выйти</a></li>
     </ul>
   </div>
+
+  <script>
+    'use strict';
+    const dropdownList = document.body.children[0];
+    function addDeleteActive(){
+      this.classList.toggle("active");
+    }
+    dropdownList.onclick = addDeleteActive;
+  </script>
 </body>
 </html>
