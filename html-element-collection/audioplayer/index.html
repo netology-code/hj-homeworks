@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="mediaplayer">
-  	<audio src="https://d34x6xks9kc6p2.cloudfront.net/540997b0-a35f-4b69-86d6-b1c925c4a264/540997b0-a35f-4b69-86d6-b1c925c4a264.mp3"></audio>
+  	<audio src="https://netology-code.github.io/hj-homeworks/html-element-collection/audioplayer/mp3/LA%20Chill%20Tour.mp3"></audio>
   	<div class="discarea">
   		<div class="disc">
   		</div>
@@ -38,5 +38,51 @@
   		</div>
   	</div>
   </div>
+  <script>
+    'use strict';
+    const songsSrcs = ["https://netology-code.github.io/hj-homeworks/html-element-collection/audioplayer/mp3/LA%20Chill%20Tour.mp3",
+                      "https://netology-code.github.io/hj-homeworks/html-element-collection/audioplayer/mp3/This%20is%20it%20band.mp3",
+                      "https://netology-code.github.io/hj-homeworks/html-element-collection/audioplayer/mp3/LA%20Fusion%20Jam.mp3"];
+    const songsNames = songsSrcs.map(x=>x.slice(x.lastIndexOf('/')+1, -4).replace(/%\d*/g, ' '));
+    let songTitle = document.querySelectorAll(".title")[0];
+    const audio = document.getElementsByTagName('audio')[0];
+    const btnPlayPause = document.getElementsByClassName("playstate")[0];
+    const mediaplayer = document.getElementsByClassName("mediaplayer")[0];
+    btnPlayPause.onclick = () => {
+      if(!mediaplayer.classList.contains("play")){
+        mediaplayer.classList.add("play");
+        audio.play();
+      }else{
+        mediaplayer.classList.remove("play");
+        audio.pause();
+      }
+    };
+    const btnStop = document.getElementsByClassName("stop")[0];
+    btnStop.onclick = () => {
+      audio.pause();
+      mediaplayer.classList.remove("play");
+      audio.currentTime = 0;
+    };
+    const btnNext = document.getElementsByClassName("next")[0];
+    const btnBack = document.getElementsByClassName("back")[0];
+    let count = 0;
+    function nextBack(n){
+      if(count+n<0){count=songsSrcs.length}
+      if(count+n===songsSrcs.length){count=-1}
+      audio.src=songsSrcs[count+=n];
+      songTitle.title = songsNames[count];
+      mediaplayer.classList.add("play");
+      audio.play();
+    }
+    btnNext.onclick = ()=>nextBack(1);
+    btnBack.onclick = ()=>nextBack(-1);
+    audio.onended = function(){
+      ++count;
+      if(count===songsSrcs.length){count=0}
+      audio.src = songsSrcs[count];
+      songTitle.title = songsNames[count];
+      audio.play();
+    };
+  </script>
 </body>
 </html>
