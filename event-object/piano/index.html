@@ -27,45 +27,68 @@
   </ul>
   <script>
     'use strict';
+
     const piano = document.getElementsByClassName('set')[0];
+
     const pianoBtns = Array.from(document.getElementsByTagName('li'));
+
     const keyPlayers = Array.from(document.getElementsByTagName('audio'));
-    const lowerTones =  ['sounds/lower/first.mp3',
-                        'sounds/lower/second.mp3',
-                        'sounds/lower/third.mp3',
-                        'sounds/lower/fourth.mp3',
-                        'sounds/lower/fifth.mp3'];
-    const middleTones = ['sounds/middle/first.mp3',
-                        'sounds/middle/second.mp3',
-                        'sounds/middle/third.mp3',
-                        'sounds/middle/third.mp3',
-                        'sounds/middle/fifth.mp3'];
-    const higherTones = ['sounds/higher/first.mp3',
-                        'sounds/higher/second.mp3',
-                        'sounds/higher/third.mp3',
-                        'sounds/higher/fourth.mp3',
-                        'sounds/higher/fifth.mp3'];
+
+    const lowerTones =  [
+      'sounds/lower/first.mp3',
+      'sounds/lower/second.mp3',
+      'sounds/lower/third.mp3',
+      'sounds/lower/fourth.mp3',
+      'sounds/lower/fifth.mp3'
+    ];
+
+    const middleTones = [
+      'sounds/middle/first.mp3',
+      'sounds/middle/second.mp3',
+      'sounds/middle/third.mp3',
+      'sounds/middle/third.mp3',
+      'sounds/middle/fifth.mp3'
+    ];
+
+    const higherTones = [
+      'sounds/higher/first.mp3',
+      'sounds/higher/second.mp3',
+      'sounds/higher/third.mp3',
+      'sounds/higher/fourth.mp3',
+      'sounds/higher/fifth.mp3'
+    ];
+
     keyPlayers.forEach((key,index) => key.src = middleTones[index]);
-    pianoBtns.forEach((btn,index) => btn.onclick = ()=>{keyPlayers[index].play()});
-    function shiftPressed(event) {
+
+    pianoBtns.forEach((btn,index) => btn.onclick = () => {keyPlayers[index].play()});
+
+    function playLowerTones(event) {
       if (event.shiftKey) {
         keyPlayers.forEach((key,index) => key.src = lowerTones[index]);
         piano.classList.add('lower');
       }
+      if (event.repeat) {
+        console.log(`Повторное нажатие ${event.code}`);
+      } else {
+        console.log(`Нажата ${event.code}`);
+      }
     }
-    function altPressed(event) {
+
+    function playHigherTones(event) {
       if (event.altKey) {
         keyPlayers.forEach((key,index) => key.src = higherTones[index]);
         piano.classList.add('higher');
       }
     }
-    function backMiddletones(){
+
+    function playMiddleTones() {
       keyPlayers.forEach((key,index) => key.src = middleTones[index]);
       piano.classList.remove('higher','lower');
     }
-    document.addEventListener('keydown', shiftPressed);
-    document.addEventListener('keydown', altPressed);
-    document.addEventListener('keyup', backMiddletones);
+
+    document.addEventListener('keydown', playLowerTones);
+    document.addEventListener('keydown', playHigherTones);
+    document.addEventListener('keyup', playMiddleTones);
   </script>
 </body>
 </html>
