@@ -37,8 +37,9 @@
   <script>
     'use strict';
     const liList = document.getElementsByTagName('li');
-    for(let li of liList){
-      li.onclick = ()=>{
+
+    for (let li of liList) {
+      li.onclick = () => {
         li.children[1].play();
       };
     }
