@@ -35,30 +35,36 @@
   </nav>
   <script>
     'use strict';
+
     const mainImage = document.getElementById('view');
-    const photoA = Array.from(document.getElementsByTagName('a'));
+
+    const photoArray = Array.from(document.getElementsByTagName('a'));
+
     const nav = document.getElementById('nav')
     let caption = document.createElement('p');
     document.body.insertBefore(caption, nav);
     caption.innerHTML = "RESIN";
     caption.style['margin-left'] = '80px';
-    function selected(event, photo){
+
+    function selectPhoto(event, photo) {
       event.preventDefault();
-      photoA.forEach(photo=>photo.classList.remove('gallery-current'));
+      photoArray.forEach(photo=>photo.classList.remove('gallery-current'));
       photo.classList.add('gallery-current');
     }
-    function capture(photo){
+
+    function showBigPic(photo) {
       mainImage.src=photo.href
     }
-    function title(photo){
+
+    function addTitle(photo) {
       caption.innerHTML=photo.children[0].title;
     }
-    photoA.forEach((photo)=>{
-      photo.addEventListener('click', ()=>(selected(event, photo)));
-      photo.addEventListener('click', ()=>(capture(photo)));
-      photo.addEventListener('click', ()=>(title(photo)));
-      }
-    );
+
+    photoArray.forEach((photo) => {
+      photo.addEventListener('click', ()=>(selectPhoto(event, photo)));
+      photo.addEventListener('click', ()=>(showBigPic(photo)));
+      photo.addEventListener('click', ()=>(addTitle(photo)));
+    });
   </script>
 </body>
 </html>
