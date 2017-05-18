@@ -79,10 +79,17 @@
         return;
       }
       if (keyPlayers[0] === higherTones[0]) {
+        console.log(true);
         return;
       } else {
         keyPlayers.forEach((key,index) => key.src = higherTones[index]);
+        console.log('hey!');
         piano.classList.add('higher');
+      }
+      if (event.repeat) {
+        console.log(`Повторное нажатие ${event.code}`);
+      } else {
+        console.log(`Нажата ${event.code}`);
       }
     }
 
