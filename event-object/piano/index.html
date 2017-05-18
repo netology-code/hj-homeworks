@@ -63,19 +63,24 @@
     pianoBtns.forEach((btn,index) => btn.onclick = () => {keyPlayers[index].play()});
 
     function playLowerTones(event) {
-      if (event.shiftKey) {
-        keyPlayers.forEach((key,index) => key.src = lowerTones[index]);
-        piano.classList.add('lower');
+      if (!event.shiftKey) {
+        return;
       }
       if (event.repeat) {
-        console.log(`Повторное нажатие ${event.code}`);
+        return;
       } else {
-        console.log(`Нажата ${event.code}`);
+        keyPlayers.forEach((key,index) => key.src = lowerTones[index]);
+        piano.classList.add('lower');
       }
     }
 
     function playHigherTones(event) {
-      if (event.altKey) {
+      if (!event.altKey) {
+        return;
+      }
+      if (event.repeat) {
+        return;
+      } else {
         keyPlayers.forEach((key,index) => key.src = higherTones[index]);
         piano.classList.add('higher');
       }
