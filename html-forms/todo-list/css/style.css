@@ -16,6 +16,7 @@ body {
   width: 350px;
   margin: 0 auto;
   padding: 15px 50px;
+  border: none;
   background-color: #EF2155;
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
           box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -37,7 +38,6 @@ ul::before {
 }
 
 li {
-  padding: 10px 15px;
   background: #FFFFFF;
   font-size: 18px;
   -webkit-transition: 0.4s;
@@ -70,6 +70,7 @@ input[type="checkbox"] {
 
 label {
   display: block;
+  padding: 10px 15px;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
@@ -104,7 +105,7 @@ h3 {
   transition: 0.4s;
 }
 
-.complete {
+.complete h3 {
   color: #6be5a8;
   text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(107,229,168,0.23);
   -webkit-transition: 0.4s;
