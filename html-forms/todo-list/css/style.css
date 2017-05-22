@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #FFB623;
+  font-family: sans-serif;
+  color: #333333;
+  padding: 50px;
+}
+
+.list-block {
+  width: 350px;
+  margin: 0 auto;
+  padding: 15px 50px;
+  background-color: #EF2155;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+          box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul::before {
+  content: "Список дел";
+  text-align: center;
+  display: block;
+  font-size: 32px;
+  padding: 5px;
+  border-bottom: 3px solid #b60d38;
+  margin-bottom: 25px;
+}
+
+li {
+  padding: 10px 15px;
+  background: #FFFFFF;
+  font-size: 18px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+          box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+li + li {
+  margin: 15px 0;
+}
+
+li:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+          box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+li:hover,
+li *:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  display: block;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+input:checked + label {
+  color: #999;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+input:not(checked) + label::before {
+  content: "◎";
+  font-size: 18px;
+  line-height: 18px;
+  vertical-align: text-bottom;
+  margin-right: 10px;
+}
+
+input:checked + label::before {
+  content: "◉";
+  color: #6be5a8;
+}
+
+h3 {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 26px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.complete {
+  color: #6be5a8;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(107,229,168,0.23);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
