@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Форма авторизации</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="login-form">
+    <h1>Авторизация</h1>
+    <form>
+      <input type="text" name="login" id="login" placeholder="Логин">
+      <input type="password" name="password" id="password" placeholder="Пароль">
+      <button>Войти</button>
+    </form>
+  </div>
+  <div id="done" class="hidden">
+    <h3>Привет, <output>Василий</output></h3>
+    <img src="./avatars/default.png">
+  </div>
+  <p id="error" class="hidden">Ошибка авторизации</p>
+  <p id="loader" class="hidden">Загрузка...</p>
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>
