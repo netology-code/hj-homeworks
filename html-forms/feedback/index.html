@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <title>Форма обратной связи</title>
   <link rel="stylesheet" href="./css/form.css">
 </head>
 <body>
@@ -17,80 +16,68 @@
         <p>Фамилия <span>*</span></p>
         <span class="icon-case"><i class="fa fa-male"></i></span>
         <input type="text" name="lastname">
-        <div class="validation"></div>
       </label>
 
       <label class="form-group">
         <p>Имя <span>*</span></p>
         <span class="icon-case"><i class="fa fa-user"></i></span>
 			  <input type="text" name="name">
-        <div class="validation"></div>
 		  </label>
 
 		  <label class="form-group">
 		    <p>Электронная почта <span>*</span></p>
 		    <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
         <input type="email" name="email">
-        <div class="validation"></div>
 			</label>
 
   		<label class="form-group">
 		    <p>Компания <span>*</span></p>
 		    <span class="icon-case"><i class="fa fa-home"></i></span>
 			  <input type="text" name="company">
-        <div class="validation"></div>
 	  	</label>
 
 		  <label class="form-group">
 		    <p>Адрес офиса <span>*</span></p>
 		    <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
 			  <input type="text" name="address">
-        <div class="validation"></div>
 	  	</label>
 
 		  <label class="form-group">
 		    <p>Почтовый индекс <span>*</span></p>
 		    <span class="icon-case"><i class="fa fa-map-marker"></i></span>
 			  <input type="text" name="zip">
-        <div class="validation"></div>
 	  	</label>
     </fieldset>
 
     <fieldset>
-
 		  <label class="form-group">
 		    <p>Город <span>*</span></p>
 		    <span class="icon-case"><i class="fa fa-building-o"></i></span>
 			  <input type="text" name="city">
-        <div class="validation"></div>
 	  	</label>
 
 		  <label class="form-group">
 		    <p>Номер телефона <span>*</span></p>
 		    <span class="icon-case"><i class="fa fa-phone"></i></span>
-			  <input type="text" name="phone">
-        <div class="validation"></div>
+			  <input type="tel" name="phone">
 	  	</label>
 
 		  <label class="form-group">
 		    <p>Специализация <span>*</span></p>
 		    <span class="icon-case"><i class="fa fa-info"></i></span>
         <input type="text" name="role">
-        <div class="validation"></div>
 			</label>
 
   		<label class="form-group">
 	    	<p>Тема сообщения <span>*</span></p>
 		    <span class="icon-case"><i class="fa fa-comment-o"></i></span>
         <input type="text" name="subject">
-        <div class="validation"></div>
 			</label>
 
   		<label class="form-group">
 	    	<p>Сообщение <span>*</span></p>
 		    <span class="icon-case"><i class="fa fa-comments-o"></i></span>
         <textarea name="message" rows="14"></textarea>
-        <div class="validation"></div>
   		</label>
   	</fieldset>
     <button type="submit" class="button-contact" disabled>Отправить сообщение</button>
@@ -104,5 +91,7 @@
     <p><output id="message"></output></p>
     <button class="button-contact">Изменить сообщение</button>
   </main>
+
+  <script src="https://use.fontawesome.com/70378a66b8.js"></script>
 </body>
 </html>
