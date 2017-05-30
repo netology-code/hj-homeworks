@@ -14,6 +14,11 @@ function onLoadEnd() {
   preloader.classList.add("hidden");
 }
 
+emailContent.addEventListener("loadstart", onLoadStart);
+emailContent.addEventListener("loadend", onLoadEnd);
+smsContent.addEventListener("loadstart", onLoadStart);
+smsContent.addEventListener("loadend", onLoadEnd);
+
 let content = document.getElementById('content');
 
 function onLoadContent() {
@@ -28,10 +33,7 @@ smsContent.addEventListener("load", onLoadContent);
 emailContent.open('GET', pressEmail.href, true);
 emailContent.send();
 
-emailContent.addEventListener("loadstart", onLoadStart);
-emailContent.addEventListener("loadend", onLoadEnd);
-smsContent.addEventListener("loadstart", onLoadStart);
-smsContent.addEventListener("loadend", onLoadEnd);
+
 
 pressEmail.addEventListener("click", onClickEmail);
 function onClickEmail(event) {
