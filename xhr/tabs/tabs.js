@@ -14,11 +14,6 @@ function onLoadEnd() {
   preloader.classList.add("hidden");
 }
 
-emailContent.addEventListener("loadstart", onLoadStart);
-emailContent.addEventListener("loadend", onLoadEnd);
-smsContent.addEventListener("loadstart", onLoadStart);
-smsContent.addEventListener("loadend", onLoadEnd);
-
 let content = document.getElementById('content');
 
 function onLoadContent() {
@@ -27,8 +22,11 @@ function onLoadContent() {
   }
 }
 
-emailContent.addEventListener("load", onLoadContent);
-smsContent.addEventListener("load", onLoadContent);
+[emailContent, smsContent].forEach(v => {
+  v.addEventListener("loadstart", onLoadStart);
+  v.addEventListener("loadend", onLoadEnd);
+  v.addEventListener("load", onLoadContent);
+});
 
 emailContent.open('GET', pressEmail.href, true);
 emailContent.send();
