@@ -33,8 +33,6 @@ smsContent.addEventListener("load", onLoadContent);
 emailContent.open('GET', pressEmail.href, true);
 emailContent.send();
 
-
-
 pressEmail.addEventListener("click", onClickEmail);
 function onClickEmail(event) {
   event.preventDefault();
