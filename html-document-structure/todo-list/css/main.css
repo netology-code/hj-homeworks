@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,700);
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 20px;
+  color: #435757;
+  background: linear-gradient(-20deg, #d0b782 20%, #a0cecf 80%);
+  font: 500 1.2em/1.2 'Roboto', sans-serif;
+}
+
+.todo-list {
+  max-width: 450px;
+  margin: 0 auto;
+  border-top: 5px solid #435757;
+  background-color: rgba(255, 255, 255, .2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  user-select: none;
+  counter-reset: done-items undone-items;
+}
+
+.todo-list h1 {
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, .4);
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.todo-list section {
+  padding: 20px;
+}
+
+.todo-list h2 {
+  position: relative;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.2em;
+}
+
+.todo-list h2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: -20px;
+  width: 5px;
+  background-color: #435757;
+}
+
+.todo-list h2::after {
+  display: block;
+  float: right;
+  font-weight: normal;
+}
+
+.todo-list .done1 h2::after {
+  content: ' (' counter(done-items) ')';
+}
+
+.todo-list .undone1 h2::after {
+  content: ' (' counter(undone-items) ')';
+}
+
+/* hide inputs offscreen, but at the same vertical positions as the correpsonding labels, so that tabbing scrolls the viewport as expected */
+.todo-list input[type=checkbox] {
+  display: block;
+  height: 53px;
+  margin: 0 0 -53px -9999px;
+  order: 4;
+  outline: none;
+}
+
+.todo-list .done label {
+  counter-increment: done-items;
+}
+
+.todo-list .undone label {
+  counter-increment: undone-items;
+}
+
+.todo-list label {
+  display: block;
+  position: relative;
+  padding: 15px 0 15px 45px;
+  border-top: 1px dashed #fff;
+  cursor: pointer;
+}
+
+.todo-list label::before {
+  content: '\f10c'; /* circle outline */
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  font: 1.5em 'FontAwesome';
+}
+
+.todo-list label:hover,
+.todo-list input:ac­tive {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.todo-list .undone label {
+  animation: undone .5s;
+}
+
+.todo-list .done label {
+  animation: done .5s;
+}
+
+.todo-list .done label::before {
+  content: '\f058'; /* circle checkmark */
+}
+
+@keyframes done {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .4);
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .4);
+  }
+}
+
+@keyframes undone {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .4);
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .4);
+  }
+}
