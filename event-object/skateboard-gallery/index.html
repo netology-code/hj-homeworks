@@ -33,5 +33,38 @@
       <img src="images/thumb/07.jpg" title="EGGBEATER">
     </a>
   </nav>
+  <script>
+    'use strict';
+
+    const mainImage = document.getElementById('view');
+
+    const photoArray = Array.from(document.getElementsByTagName('a'));
+
+    const nav = document.getElementById('nav')
+    let caption = document.createElement('p');
+    document.body.insertBefore(caption, nav);
+    caption.innerHTML = "RESIN";
+    caption.style['margin-left'] = '80px';
+
+    function selectPhoto(event, photo) {
+      event.preventDefault();
+      photoArray.forEach(photo=>photo.classList.remove('gallery-current'));
+      photo.classList.add('gallery-current');
+    }
+
+    function showBigPic(photo) {
+      mainImage.src=photo.href
+    }
+
+    function addTitle(photo) {
+      caption.innerHTML=photo.children[0].title;
+    }
+
+    photoArray.forEach((photo) => {
+      photo.addEventListener('click', ()=>(selectPhoto(event, photo)));
+      photo.addEventListener('click', ()=>(showBigPic(photo)));
+      photo.addEventListener('click', ()=>(addTitle(photo)));
+    });
+  </script>
 </body>
 </html>

@@ -45,5 +45,40 @@
       </svg>
     </div>
   </main>
+  <script>
+    const nav = document.getElementsByTagName('nav')[0];
+
+    function openPanel() {
+      if (!event.ctrlKey&&!event.altKey) {
+        return;
+      }
+      if (event.code==="KeyT") {
+        nav.classList.toggle('visible');
+      }
+    }
+
+    document.addEventListener('keydown', openPanel);
+
+    const div = document.getElementsByClassName('secret')[0];
+
+    let letters = '';
+
+    function revealSecret(event) {
+      letters += event.code.slice(-1);
+      if (letters[0]!=="Y") {
+        letters = '';
+        return;
+      }
+      if (letters.length===9) {
+        if (letters==='YTNJKJUBZ') {
+          div.classList.add('visible');
+        } else {
+          letters = '';
+        }
+      }
+    }
+
+    document.addEventListener('keydown', revealSecret);
+  </script>
 </body>
 </html>

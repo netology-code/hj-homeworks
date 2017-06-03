@@ -34,5 +34,15 @@
   		<audio src="wav/ride.wav" />
   	</li>
   </ul>
+  <script>
+    'use strict';
+    const liList = document.getElementsByTagName('li');
+
+    for (let li of liList) {
+      li.onclick = () => {
+        li.children[1].play();
+      };
+    }
+  </script>
 </body>
 </html>
