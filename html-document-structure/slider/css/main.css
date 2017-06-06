@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+}
+
+nav > a {
+	height: 91px;
+	position: absolute;
+	width: 43px;
+	top: 50%;
+	margin-top: -30px;
+	opacity: 0.6;
+	text-indent: -99999px;
+	cursor: pointer;
+	-webkit-transition: opacity 200ms ease-out;
+	transition: opacity 200ms ease-out;
+	z-index: 1000;
+}
+
+nav > a:hover {
+	opacity: 1;
+}
+
+nav > a.disabled,
+nav > a.disabled:hover {
+	opacity: 0.2;
+	cursor: default;
+}
+
+[data-action=prev] {
+	left: 43px;
+	background: #000 url('../i/sprite.png') no-repeat -200px 25px;
+}
+
+[data-action=next] {
+	right: 43px;
+	background: #000 url('../i/sprite.png') no-repeat -167px 25px;
+}
+
+[data-action=first] {
+	left: 0;
+	background: #000 url('../i/sprite.png') no-repeat -200px 25px;
+}
+
+[data-action=last] {
+	right: 0;
+	background: #000 url('../i/sprite.png') no-repeat -167px 25px;
+}
+
+.slider {
+	height:100vh;
+	position: relative;
+}
+
+.slide {
+	position:absolute;
+	height:100%;
+	width:100%;
+	opacity: 0.2;
+	-webkit-transition: all 400ms ease-out;
+	transition: all 400ms ease-out;
+}
+
+.slider .slide-current {
+	z-index: 100;
+	opacity: 1;
+	transform: rotate(0deg);
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+	position: fixed;
+	left: 0;
+}
