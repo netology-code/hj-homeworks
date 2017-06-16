@@ -1,0 +1,93 @@
+@charset "UTF-8";
+[data-sort-by='firstName'] [data-prop-name='firstName'], [data-sort-by='lastName'] [data-prop-name='lastName'], [data-sort-by='birth'] [data-prop-name='birth'] {
+  background: rgba(0, 0, 128, 0.15);
+  text-shadow: 0 1px #eee;
+}
+[data-sort-by='firstName'] [data-prop-name='firstName']:before, [data-sort-by='lastName'] [data-prop-name='lastName']:before, [data-sort-by='birth'] [data-prop-name='birth']:before {
+  box-shadow: 0 0 .5em navy;
+}
+[data-sort-by='firstName'] .prop__name[data-prop-name='firstName'], [data-sort-by='lastName'] .prop__name[data-prop-name='lastName'], [data-sort-by='birth'] .prop__name[data-prop-name='birth'] {
+  color: lightcyan;
+}
+[data-sort-by='firstName'] .prop__name[data-dir='1'][data-prop-name='firstName']:after, [data-sort-by='lastName'] .prop__name[data-dir='1'][data-prop-name='lastName']:after, [data-sort-by='birth'] .prop__name[data-dir='1'][data-prop-name='birth']:after {
+  content: '▲';
+}
+[data-sort-by='firstName'] .prop__name[data-dir='-1'][data-prop-name='firstName']:after, [data-sort-by='lastName'] .prop__name[data-dir='-1'][data-prop-name='lastName']:after, [data-sort-by='birth'] .prop__name[data-dir='-1'][data-prop-name='birth']:after {
+  content: '▼';
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  background: #555;
+  font: 1em/1.25 trebuchet ms, verdana, sans-serif;
+  color: #fff;
+}
+
+table {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 4em auto;
+  border-collapse: collapse;
+  min-width: 23em;
+  width: 70%;
+  max-width: 56em;
+  border-radius: .5em;
+  box-shadow: 0 0 .5em #000;
+}
+
+thead {
+  background: linear-gradient(#606062, #28262b);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+th {
+  text-align: left;
+}
+
+tbody {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+}
+
+tr {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.odd {
+  background: linear-gradient(#eeeeee 1px, #dddddd 1px, #cccccc calc(100% - 1px), #999999 calc(100% - 1px));
+}
+
+.even {
+  background: linear-gradient(#eeeeee 1px, #bbbbbb 1px, #aaaaaa calc(100% - 1px), #999999 calc(100% - 1px));
+}
+
+[class*='prop__'] {
+  float: left;
+  position: relative;
+  padding: .5em 1em;
+  width: 35%;
+}
+[class*='prop__']:last-child {
+  width: 30%;
+}
+[class*='prop__']:before {
+  position: absolute;
+  top: -.5em;
+  right: 0;
+  bottom: -5em;
+  left: 0;
+  content: "";
+}
+[class*='prop__']:after {
+  position: absolute;
+  right: .5em;
+}

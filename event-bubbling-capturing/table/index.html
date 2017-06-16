@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th class='prop__name' data-prop-name='firstName'>Имя</th>
+        <th class='prop__name' data-prop-name='lastName'>Фамилия</th>
+        <th class='prop__name' data-prop-name='birth'>Год рождения</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <script src="./js/table.js"></script>
+  <script src="./js/sort.js"></script>
+  <script>
+    const table = document.querySelector('table');
+    table.addEventListener('click', handleTableClick);
+  </script>
+</body>
+</html>
