@@ -1,0 +1,29 @@
+body {
+  font-family: Menlo, Andale Mono, monospace;
+  background: #f0f0f0;
+  color: #444;
+  text-shadow: 1px 1px 0px white;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.container {
+  width: 50%;
+  margin: 4em auto;
+}
+
+.counter {
+  height: 140px;
+  width: 180px;
+  overflow: hidden;
+  position: relative;
+  font-size: 140px;
+  line-height: 140px;
+  text-align: center;
+  margin: 70px auto;
+  display: block;
+}
