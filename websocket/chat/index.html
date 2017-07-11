@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="chat">
+    <div class="chat-title">
+      <h1>Георгий Бородин</h1>
+      <h2 class="chat-status" data-online="в сети" data-offline="не в сети">не в сети</h2>
+      <figure class="avatar">
+        <img src="./i/profile-80.jpg">
+      </figure>
+    </div>
+    <div class="messages">
+      <div class="messages-templates">
+        <div class="message loading">
+          <figure class="avatar"><img src="./i/profile-80.jpg" /></figure>
+          <span></span>
+        </div>
+        <div class="message">
+          <figure class="avatar"><img src="./i/profile-80.jpg" /></figure>
+          <span class="message-text">Привет!</span>
+          <div class="timestamp">12:56</div>
+        </div>
+        <div class="message message-personal">
+          <span class="message-text">Привет</span>
+          <div class="timestamp">12:56</div>
+        </div>
+        <div class="message message-status">
+          <span class="message-text">Пользователь не в сети</span>
+        </div>
+      </div>
+      <div class="messages-content">
+      </div>
+    </div>
+    <form class="message-box" action="/404/" method="POST">
+      <input type="text" class="message-input" placeholder="Ваше сообщение …">
+      <button disabled type="submit" class="message-submit">Отправить</button>
+    </form>
+
+  </div>
+  <div class="bg"></div>
+  <script src="./js/chat.js"></script>
+</body>
+</html>
