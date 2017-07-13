@@ -1,0 +1,11 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  overflow:hidden;
+}
+
+body {
+  background-image: url(https://unsplash.it/g/1280/1024/?random);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
