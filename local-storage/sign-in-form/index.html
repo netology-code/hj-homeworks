@@ -8,20 +8,59 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div id="login-form">
-    <h1>Авторизация</h1>
-    <form>
-      <input type="text" name="login" id="login" placeholder="Логин">
-      <input type="password" name="password" id="password" placeholder="Пароль">
-      <button>Войти</button>
-    </form>
+  <div class="login-wrap">
+  	<div class="login-html">
+  		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Вход</label>
+  		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Регистрация</label>
+  		<div class="login-form">
+  			<form class="sign-in-htm">
+  				<div class="group">
+  					<label for="email" class="label">Электронный адрес</label>
+  					<input id="email" name="email" type="email" class="input">
+  				</div>
+  				<div class="group">
+  					<label for="pass" class="label">Пароль</label>
+  					<input id="pass" name="password" type="password" class="input" data-type="password">
+  				</div>
+  				<div class="group">
+            <input type="hidden" name="isPermanent" value="0">
+  					<input id="check" name="isPermanent" value="1" type="checkbox" class="check" checked>
+  					<label for="check"><span class="icon"></span> Запомнить меня</label>
+  				</div>
+  				<div class="group">
+  					<input type="submit" class="button" value="Войти">
+  				</div>
+          <output class="error-message"></output>
+  			</form>
+  			<form class="sign-up-htm">
+  				<div class="group">
+  					<label for="email" class="label">Электронный адрес</label>
+  					<input id="email" name="email" type="email" class="input">
+  				</div>
+  				<div class="group">
+  					<label for="pass" class="label">Пароль</label>
+  					<input id="pass" name="password" type="password" class="input" data-type="password">
+  				</div>
+  				<div class="group">
+  					<label for="pass" class="label">Пароль еще раз</label>
+  					<input id="pass" name="passwordcopy" type="password" class="input" data-type="password">
+  				</div>
+  				<div class="group">
+  					<label for="pass" class="label">Имя</label>
+  					<input id="pass" name="name" type="text" class="input">
+  				</div>
+  				<div class="group">
+  					<input type="submit" class="button" value="Зарегистрироваться">
+  				</div>
+          <output class="error-message"></output>
+  				<div class="hr"></div>
+  				<div class="foot-lnk">
+  					<label for="tab-1">Уже зарегистрированы?</a>
+  				</div>
+  			</form>
+  		</div>
+  	</div>
   </div>
-  <div id="done" class="hidden">
-    <h3>Привет, <output>Василий</output></h3>
-    <img src="./avatars/default.png">
-  </div>
-  <p id="error" class="hidden">Ошибка авторизации</p>
-  <p id="loader" class="hidden">Загрузка...</p>
-  <script src="js/script.js" charset="utf-8"></script>
+  <script src="./js/auth.js"></script>
 </body>
 </html>
