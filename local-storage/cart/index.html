@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <!-- Demo page craeted by https://github.com/petr-goca -->
+  <header role="banner" aria-label="Heading">
+    <div class="header">
+      <div class="_cont">
+        <div class="shadow">
+          <a class="logo" title="Home">Магазин</a>
+        </div>
+        <div class="mobile-menu">
+          <form action="/search" method="get" id="find">
+            <div>
+              <input type="text" name="q" id="find-input" class="find-input" placeholder="Поиск..." value="">
+              <button type="submit" title="Search" id="find-btn">Поиск</button>
+            </div>
+          </form>
+          <a id="customer_login_link">Войти</a>
+          <nav role="navigation" aria-label="Catalog">
+            <ul>
+              <li class="nc nav-li-category">
+                <a class="nc nav-category" data-subcategories="1">Женщины</a>
+                <ul class="nc">
+                </ul>
+              </li>
+              <li class="nc nav-li-category">
+                <a class="nc nav-category" data-subcategories="1">Мужчины</a>
+                <ul class="nc">
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <span id="nav-icon"></span>
+      </div>
+    </div>
+    <div class="breadcrumb" role="navigation" aria-label="Breadcrumbs">
+      <div class="_cont">
+        <ol>
+          <li><a title="Back to the frontpage">Каталог</a></li>
+          <li><a title="">Мужчины</a></li>
+          <li>Tony Hunfinger T-Shirt New York</li>
+        </ol>
+      </div>
+    </div>
+  </header>
+  <section aria-label="Main content" role="main" class="product-detail">
+    <div>
+      <div class="shadow">
+        <div class="_cont detail-top">
+          <div class="cols">
+            <div class="left-col">
+              <div class="thumbs">
+                <a class="thumb-image active" href="https://neto-api.herokuapp.com/hj/3.3/cart/product_1024x1024.png?v=1446769025" data-index="0">
+                  <span><img src="https://neto-api.herokuapp.com/hj/3.3/cart/product_150x150.png?v=1446769025" alt="Tommy Hilfiger T-Shirt New York"></span>
+                </a>
+                <a class="thumb-image" href="https://neto-api.herokuapp.com/hj/3.3/cart/tricko1_1024x1024.jpg?v=1447104179" data-index="1">
+                  <span><img src="https://neto-api.herokuapp.com/hj/3.3/cart/tricko1_150x150.jpg?v=1447104179" alt="Tommy Hilfiger T-Shirt New York"></span>
+                </a>
+                <a class="thumb-image" href="https://neto-api.herokuapp.com/hj/3.3/cart/tricko2_1024x1024.jpg?v=1447104180" data-index="2">
+                  <span><img src="https://neto-api.herokuapp.com/hj/3.3/cart/tricko2_150x150.jpg?v=1447104180" alt="Tommy Hilfiger T-Shirt New York"></span>
+                </a>
+                <a class="thumb-image" href="https://neto-api.herokuapp.com/hj/3.3/cart/tricko3_1024x1024.jpg?v=1447104182" data-index="3">
+                  <span><img src="https://neto-api.herokuapp.com/hj/3.3/cart/tricko3_150x150.jpg?v=1447104182" alt="Tommy Hilfiger T-Shirt New York"></span>
+                </a>
+              </div>
+              <div class="big">
+                <span id="big-image" class="img" quickbeam="image" style="background-image: url('https://neto-api.herokuapp.com/hj/3.3/cart/product_1024x1024.png?v=1446769025')"></span>
+                <div class="detail-socials">
+                  <div class="social-sharing">
+                    <a target="_blank"  class="share-facebook" title="Share"></a>
+                    <a target="_blank"  class="share-twitter" title="Tweet"></a>
+                    <a target="_blank"  class="share-pinterest" title="Pin it"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-col">
+              <h1 itemprop="name">Tony Hunfinger T-Shirt New York</h1>
+              <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <meta itemprop="priceCurrency" content="USD">
+                <link itemprop="availability" href="http://schema.org/InStock">
+                <div class="price-shipping">
+                  <div class="price" id="price-preview" quickbeam="price" quickbeam-price="800">
+                    $800.00
+                  </div>
+                  <a>Бесплатная доставка</a>
+                </div>
+                <form id="AddToCartForm" data-product-id="2721888517">
+                  <div class="swatches">
+                    <div class="swatch clearfix" data-option-index="0" id="sizeSwatch">
+                      <div class="header">Размер</div>
+                    </div>
+                    <div class="swatch clearfix" data-option-index="1" id="colorSwatch">
+                      <div class="header">Цвет</div>
+                    </div>
+                  </div>
+
+                  <div class="btn-and-quantity-wrap">
+                    <div class="btn-and-quantity">
+                      <input type="hidden" id="updates_2721888517" name="quantity" value="1" class="quantity-selector">
+                      <button type="submit" id="AddToCart" quickbeam="add-to-cart">
+                        <span id="AddToCartText">Добавить в корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                <div class="social-sharing-btn-wrapper">
+                  <span id="social_sharing_btn">Поделиться</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <footer role="contentinfo" aria-label="Footer">
+    <div class="_cont">
+      <div class="socials">
+        <strong>Следите за нами:</strong>
+        <ul>
+          <li><a  title="html-koder / test on Twitter" class="tw" target="_blank">Twitter</a></li>
+          <li><a  title="html-koder / test on Facebook" class="fb" target="_blank">Facebook</a></li>
+          <li><a  title="html-koder / test on Instagram" class="in" target="_blank">Instagram</a></li>
+          <li><a  title="html-koder / test on Pinterest" class="pi" target="_blank">Pinterest</a></li>
+        </ul>
+      </div>
+      <div class="top">
+        <div class="right">
+          <form method="post" action="/contact" class="contact-form" accept-charset="UTF-8">
+            <input type="hidden" value="customer" name="form_type" /><input type="hidden" name="utf8" value="✓" />
+            <div>
+              <input type="hidden" id="contact_tags" name="contact[tags]" value="newsletter"/>
+              <input type="text" id="contact_email" name="contact[email]" placeholder="Подпешитесь и следите за акциями …">
+              <button type="submit" title="Newsletter Signup">OK</button>
+            </div>
+          </form>
+        </div>
+        <div class="left">
+          <span class="phone">+8 800 456-78-91</span>
+          <a class="mail" href="mailto:email.from@settings.com">email.from@settings.com</a>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="left">
+          <nav role="navigation" aria-label="Service menu">
+            <ul>
+              <li><a >Гарантия</a></li>
+              <li><a >О нас</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quickbeam cart-->
+
+  <div id="quick-cart" quickbeam="cart">
+
+  </div>
+
+  <!-- Quickbeam cart end -->
+  <script src="./js/cart.js"></script>
+</body>
+</html>
