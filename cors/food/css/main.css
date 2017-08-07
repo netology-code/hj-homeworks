@@ -1,0 +1,148 @@
+.wrapper { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: url(http://c.boylett.uk/images/wallpapers/002.jpg); background-size: 100% 100% }
+.food { position: absolute !important; top: 50%; left: 50%; margin: -197px 0 0 -310px }
+
+.food
+{
+  position: relative;
+  width: 620px;
+  height: 394px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, .5);
+}
+
+.food > .cover
+{
+  position: relative;
+  height: 260px;
+  background: transparent center no-repeat;
+  background-size: 100% auto;
+  border-radius: 2px 2px 0 0;
+}
+
+.food > .cover > label
+{
+  position: absolute;
+  top: 22px;
+  left: -33px;
+  height: 33px;
+  padding: 0 30px 0 63px;
+  line-height: 33px;
+  vertical-align: middle;
+  font-family: sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #FFF;
+  text-shadow: 0 1px 2px #000;
+  background: rgba(136, 86, 168, .6);
+}
+
+.food > .cover > label > i
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.food > .cover > label > i > svg
+{
+  margin: 8px;
+}
+
+.food > .cover > .download
+{
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 47px;
+  height: 47px;
+  background: rgba(51, 193, 210, .6);
+  border-radius: 100%;
+}
+
+.food > .cover > .download:hover { background: #33C1D2 }
+
+.food > .cover > .download > svg
+{
+  margin: 12px 10px 0;
+}
+
+.food > .info
+{
+  position: relative;
+  height: 134px;
+  overflow: hidden;
+  border-radius: 0 0 2px 2px;
+}
+
+.food > .info > .recipe
+{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 134px;
+  height: 134px;
+  background: #8856A8;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0 0 0 2px;
+}
+
+.food > .info > .recipe:hover { background: #9967B9 }
+
+.food > .info > .recipe > i
+{
+  display: block;
+  margin: 38px 0 15px;
+}
+
+.food > .info > .content
+{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 154px;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #888;
+}
+
+.food > .info > .content strong { font-weight: normal; color: #333 }
+.food > .info > .content .pad-right { padding-right: 20px }
+.food > .info > .content .border-right { border-right: 1px solid #D9D9D9 }
+.food > .info > .content .consumers img, .food > .info > .content .consumers span { display: inline-block; width: 32px; height: 32px; margin: 0 2px 0 0; line-height: 32px; vertical-align: middle; border-radius: 100% }
+.food > .info > .content .consumers span { margin: 0 }
+
+.food > .info > .content h1
+{
+  margin: 0 0 10px;
+  font-size: 26px;
+  font-weight: normal;
+  color: #333;
+}
+
+.food > .info > .content .stars, .food > .info > .content .stars > em
+{
+  display: block;
+  width: 99px;
+  height: 18px;
+  margin: 0 auto 7px;
+  text-align: left;
+  background: url(https://neto-api.herokuapp.com/hj/4.1/food/star.png);
+}
+
+.food > .info > .content .stars > em
+{
+  width: 99px;
+  height: 18px;
+  margin: 0;
+  background: url(https://neto-api.herokuapp.com/hj/4.1/food/star.png);
+  background-position: 0 -18px;
+}
