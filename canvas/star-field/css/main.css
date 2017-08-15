@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+html
+{
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #ccc;
+}
+
+body
+{
+  width: 800px;
+  font-family: Ubuntu;
+  margin: 0 auto;
+}
+
+canvas
+{
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+}
