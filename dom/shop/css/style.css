@@ -64,18 +64,18 @@ body {
   margin-left: 20px;
 }
 
-#cart {
+.cart {
   margin-top: 50px;
   overflow: hidden;
 }
 
-#head {
+.head {
   width: 100%;
   height: 40px;
   display: block;
 }
 
-#head h3 {
+.head h3 {
   display: inline-block;
   line-height: 40px;
   margin: 0;
