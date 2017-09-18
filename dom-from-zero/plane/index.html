@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="header-bar affix">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 header-controls">
+					<form class="form-inline">
+						<div class="form-group">
+							<label for="acSelect" class="control-label">Выбрать самолёт:</label>
+							<select class="form-control" name="ACSelect" id="acSelect" style="width: 10em">
+  							<option value="a319">A319 (150 пассажиров)</option>
+  							<option value="a320">A320 (180 пассажиров)</option>
+  							<option value="a320x">A320 (186 пассажиров)</option>
+  							<option value="a321">A321 (230 пассажиров)</option>
+  						</select>
+						</div>
+						<div class="form-group">
+							<button id="btnSeatMap" class="btn btn-default"><span class="glyphicon glyphicon-plane"></span> Показать схему</button>
+						</div>
+						<div class="form-group">
+							<button id="btnSetFull" class="btn btn-success"><span class="glyphicon glyphicon-plane"></span> Заполнить</button>
+						</div>
+						<div class="form-group">
+							<button id="btnSetEmpty" class="btn btn-warning"><span class="glyphicon glyphicon-plane"></span> Очистить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-view container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 id="seatMapTitle" class="text-center">Выберите самолёт</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div id="seatMapDiv" class="col-xs-12 seating-chart block-center">
+				<h3 class='text-center'>Самолёт не выбран</h3>
+			</div>
+	</div>
+	</div>
+	<div class="total-bar container">
+		<div class="row text-center total-contents">
+			<div class="col-xs-4">Всего мест: <span class="total-number" id="totalPax">XXX</span></div>
+			<div class="col-xs-4">Взрослых: <span class="total-number" id="totalAdult">XXX</span></div>
+			<div class="col-xs-4">За полцены: <span class="total-number" id="totalHalf">XXX</span></div>
+		</div>
+	</div>
+  <script src="./js/scheme.js"></script>
+</body>
+</html>
