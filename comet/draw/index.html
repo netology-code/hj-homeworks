@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="controls">
+    <h3>Фигуры:</h3>
+    <div class='lightBorder' >
+      <p><label><input type="radio" name="shape" value="line" checked="checked"> Линия</label></p>
+      <p><label><input type="radio" name="shape" value="rect"> Прямоугольник</label></p>
+      <p><label><input type="radio" name="shape" value="circle"> Круг</label></p>
+      <p><label><input type="radio" name="shape" value="square"> Квадрат</label></p>
+      <p><label><input type="radio" name="shape" value="ellipse"> Эллипс</label></p>
+      <p><label><input type="radio" name="shape" value="polygon"> Многоугольник</label></p>
+    </div>
+    <h3>Свойства линии:</h3>
+    <div class='lightBorder'>
+      <p><label>Толщина: <input id='lineWidth' type='range' step='1' min="1" max="200" value="4"></label></p>
+      Края:
+      <p><label><input name="lineCap" value="round" type='radio' checked="checked">скругленные</label></p>
+      <p><label><input name="lineCap" value="square" type='radio'>угловатые</label></p>
+      <p><label><input name="lineCap" value="butt" type='radio'>обрезанные</label></p>
+
+    </div>
+    <h3>Цвета:</h3>
+    <div class='lightBorder'>
+      <p><label>Заливка: <input id='fillColor' type='color' step='1' value="#24B0D5"></label></p>
+      <p><label>Обводка: <input id='strokeColor' type='color' step='1'> </label></p>
+      <p><label>Цвет фона:<input id='backgroundColor' type='color' step='1' value="#ffffff"></label></p>
+      * изменение цвета фона удалит изображение!
+    </div>
+    <div class='lightBorder'>
+      <p><label>Вершин многоугольника: <input id='polygonSides' type='range' step='1' min="3" max="12"></label></p>
+    </div>
+
+    <p><label>Заливать фигуру: <input id='fillBox' type='checkbox' checked='checked'></label></p>
+    <p><label style="font-size:12px;">XOR: <input id='xor' type='checkbox'></label></p>
+
+    <button type="button" class="button-error pure-button" id="clearCanvas" name="button">Очистить холст</button>
+  </div>
+
+
+  <canvas id="canvas" width="650" height="800"></canvas>
+  <script src="./js/draw.js"></script>
+  <script src="./js/socket.js"></script>
+</body>
+</html>

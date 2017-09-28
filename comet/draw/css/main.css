@@ -1,0 +1,94 @@
+canvas {
+  float: left;
+  position: relative;
+  border-radius: 10px;
+  margin: 10px;
+  border: 1px solid gray;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#canvas1 {
+  margin-left: 1150px;
+  margin-top: 30px;
+}
+
+.controls {
+  width: 200px;
+  padding: 12px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background: #D9D9D9;
+  transition: all .5s ease;
+  float: left;
+  position: relative;
+  margin: 10px;
+  height: 800px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-family: Arial;
+
+}
+.controls h3 {
+  color: #3D3D3D;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 10px;
+}
+
+.lightBorder {
+  border: 1px solid #B6B6B6;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  padding: 5px;
+  border-radius: 7px;
+  background: #EEEEEE;
+  box-shadow: inset 1px 1px 10px rgba(0,0,0,0.1);
+}
+
+}
+
+h1 {
+  margin-left: 300px;
+}
+
+p {
+  margin: 4px;
+}
+
+
+
+/*body {
+background: #FF4E50;
+  background: linear-gradient(to left, #FF4E50 , #F9D423);
+  transition: all .5s ease;
+}*/
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
