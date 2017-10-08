@@ -1,8 +1,8 @@
 canvas {
-  float: left;
   position: relative;
-  border-radius: 10px;
+  float: left;
   margin: 10px;
+  border-radius: 10px;
   border: 1px solid gray;
 
   -webkit-box-sizing: border-box;
@@ -16,40 +16,39 @@ canvas {
 }
 
 .controls {
+  position: relative;
+  float: left;
   width: 200px;
+  height: 800px;
+  margin: 10px;
   padding: 12px;
+  font-size: 13px;
+  font-family: Arial;
+  background: #D9D9D9;
   border: 1px solid gray;
   border-radius: 10px;
-  background: #D9D9D9;
-  transition: all .5s ease;
-  float: left;
-  position: relative;
-  margin: 10px;
-  height: 800px;
+  transition: all 0.5s ease;
+  
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 13px;
-  font-family: Arial;
-
 }
+
 .controls h3 {
-  color: #3D3D3D;
-  text-transform: uppercase;
   font-size: 11px;
+  text-transform: uppercase;
   line-height: 10px;
+  color: #3D3D3D;
 }
 
 .lightBorder {
-  border: 1px solid #B6B6B6;
   margin-top: 10px;
   margin-bottom: 18px;
   padding: 5px;
-  border-radius: 7px;
   background: #EEEEEE;
-  box-shadow: inset 1px 1px 10px rgba(0,0,0,0.1);
-}
-
+  border: 1px solid #B6B6B6;
+  border-radius: 7px;
+  box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -59,14 +58,6 @@ h1 {
 p {
   margin: 4px;
 }
-
-
-
-/*body {
-background: #FF4E50;
-  background: linear-gradient(to left, #FF4E50 , #F9D423);
-  transition: all .5s ease;
-}*/
 
 .button-success,
 .button-error,
