@@ -1,20 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 body {
   padding: 5vh 5vw;
+  font-family: open sans, helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 24px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: open sans, helvetica, sans-serif;
-  font-weight: 300;
-  line-height: 24px;
 }
+
 body h1 {
-  color: #496E8C;
-  text-align: center;
   width: calc(100% - 2.5vw);
   padding-bottom: 2.5vh;
+  text-align: center;
+  color: #496E8C;
   border-bottom: 4px solid #B6EFDF;
 }
 
@@ -29,20 +30,20 @@ h2 {
 }
 
 main div {
+  position: relative;
+  z-index: 1;
   width: 7vw;
   height: 7vh;
-  line-height: 7vh;
-  background: #496E8C;
-  color: #B6EFDF;
   margin: .1em;
+  line-height: 7vh;
   text-align: center;
+  color: #B6EFDF;
+  background: #496E8C;
   -webkit-transform: scale(0.99) rotateY(0deg);
   -moz-transform: scale(0.99) rotateY(0deg);
   -ms-transform: scale(0.99) rotateY(0deg);
   -o-transform: scale(0.99) rotateY(0deg);
   transform: scale(0.99) rotateY(0deg);
-  position: relative;
-  z-index: 1;
   -webkit-transition: all 0.8s ease, width 0s linear, height 0s linear;
   -moz-transition: all 0.8s ease, width 0s linear, height 0s linear;
   transition: all 0.8s ease, width 0s linear, height 0s linear;
@@ -55,6 +56,9 @@ main div {
 }
 
 div.flip-it {
+  z-index: 2;
+  color: #496E8C;
+  background: #B6EFDF;
   -webkit-transform: scale(2) rotateY(360deg);
   -moz-transform: scale(2) rotateY(360deg);
   -ms-transform: scale(2) rotateY(360deg);
@@ -63,7 +67,4 @@ div.flip-it {
   -webkit-transition: all 0.8s ease, width 0s linear, height 0s linear;
   -moz-transition: all 0.8s ease, width 0s linear, height 0s linear;
   transition: all 0.8s ease, width 0s linear, height 0s linear;
-  z-index: 2;
-  background: #B6EFDF;
-  color: #496E8C;
 }
