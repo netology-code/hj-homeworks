@@ -1,27 +1,38 @@
-# Задача 2. Скрипт с ошибками
+# Задача 2. Ударная установка
 
-#### В рамках домашнего задания к лекции «JavaScript в браузере: создаем интерактивные веб-страницы»
+#### В рамках домашнего задания к лекции «Способы поиска нужного HTML-элемента»
 
 ## Описание
 
-Один из наших CSS-гуру [реализовал](https://netology-code.github.io/hj-homeworks/browser/errors/) красивую анимацию конверта для интерфейса почты. Но на данный момент она не работает.
+При клике на кнопки `<li class="drum-kit__drum">` с названием звука воспроизвести соответствующий звук.
 
-Вам нужно исправить реализацию и сделать так, чтобы при клике на кнопку «Открыть» конверт открывался. При повторном клике конверт должен закрываться:
-![Открывающийся конверт](./res/envelope.gif)
+![Ударная установка](./res/drum-machine.png)
 
-## Реализация
+## Интерфейс
 
-Само открытие конверта реализовано в функции `openMail`. Оно работает, и эту функцию править не нужно. Можете убедиться в этом, просто вызвав её.
-
-Вам необходимо найти и исправить все ошибки в скрипте `ui.js` (или во вкладке «JS» кодпена) чтобы пример работал, как описано выше.
+Для проигрывания звука следует обращаться к тегу `audio`, установленному в кнопке.
 
 ## Материалы
 
 ### Реализация
 
-В онлайн-песочнице на [CODEPEN](https://codepen.io/dfitiskin/pen/LWMvOb).
+В онлайн-песочнице на [CODEPEN](https://codepen.io/solarrust/pen/NpoQLB).
 
-В репозитории на [GitHub](https://github.com/netology-code/hj-homeworks/tree/master/browser/errors).
+В репозитории на [GitHub](https://github.com/netology-code/hj-homeworks/tree/master/html-element-collection/drum-machine).
+
+### Звуки для ударной установки
+
+1. [Звук Clap](https://netology-code.github.io/hj-homeworks/html-element-collection/drum-machine/wav/clap.wav)
+
+2. [Звук Hihat](https://netology-code.github.io/hj-homeworks/html-element-collection/drum-machine/wav/hihat.wav)  
+
+3. [Звук Kick](https://netology-code.github.io/hj-homeworks/html-element-collection/drum-machine/wav/kick.wav)
+
+4. [Звук Openhat](https://netology-code.github.io/hj-homeworks/html-element-collection/drum-machine/wav/openhat.wav)
+
+5. [Звук Boom](https://netology-code.github.io/hj-homeworks/html-element-collection/drum-machine/wav/boom.wav)
+
+6. [Звук Ride](https://netology-code.github.io/hj-homeworks/html-element-collection/drum-machine/wav/ride.wav)
 
 ### Инструкция по выполнению домашнего задания
 
@@ -29,7 +40,7 @@
 
 Потребуется: только ваш браузер.
 
-1. Открыть код в [песочнице](https://codepen.io/dfitiskin/pen/LWMvOb).
+1. Открыть код в [песочнице](https://codepen.io/solarrust/pen/NpoQLB).
 
 2. Нажать на кнопку «Fork».
 
