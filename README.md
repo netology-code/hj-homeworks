@@ -29,7 +29,7 @@
 1. Клонировать репозиторий с домашними заданиями `git clone https://github.com/netology-code/hj-homeworks.git`.
 2. Перейти в папку `cd hj-homeworks`.
 3. Создать репозиторий на [GitHub][1] или [BitBucket][2].
-4. Добавить репозиторий в проект `git remote add homeworks %repo-url%`, где `%repo-url%` адрес созданного репозитория.
+4. Добавить репозиторий в проект `git remote add homeworks %repo-url%`, где `%repo-url%` — адрес созданного репозитория.
 
 ## Решение задач
 
