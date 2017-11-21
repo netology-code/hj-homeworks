@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 608px;
+  margin: 20px auto;
+  padding: 5px;
+
+  background: #cbcbcb;
+}
+
+.stories {
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 1px 1px 1px 1px #a1a1a1;
+}
+
+.stories__logo {
+  min-height: 10px;
+  padding: 34px 25px;
+
+  background: #fff;
+}
+
+.stories__logo__netology-logo {
+  max-height: 18px;
+}
+
+.stories__slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10px;
+  padding: 15px 25px;
+  border-bottom: 1px solid #cbcbcb;
+  border-top: 1px solid #cbcbcb;
+
+  box-shadow: 0 1px 1px 0 #d1d1d1 inset;
+  background: #f2f2f2;
+}
+
+.stories__slider__photos-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 470px;
+  height: 72px;
+  padding: 3px 3px 3px 23px;
+}
+
+.stories__slider__photo {
+  position: relative;
+  flex: 0 0 auto;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+
+  border: 4px solid #f2f2f2;
+  margin: 3px;
+
+  background: #aaa;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.stories__slider__photo img {
+  height: 60px;
+  margin-left: -25%;
+}
+
+.current-photo {
+  width: 64px;
+  height: 64px;
+
+  border: 4px solid #f2f2f2;
+  box-shadow: 0 0 0 2px #7eb924;
+}
+
+.stories__slider__photos-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 0px;
+
+  width: 1px;
+  height: 30px;
+
+  background: #ccc;
+}
+
+.stories__slider__web-cam {
+  position: relative;
+  background: url(../img/record.png);
+  background-size: cover;
+  background-position: 0 0;
+  height: 60px;
+  width: 60px;
+  border: none;
+  outline: none;
+}
+
+.stories__slider__btn-next {
+  height: 30px;
+  width: 30px;
+  border: none;
+
+  background: transparent url(../img/next.png);
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.stories__slider__btn-next:hover {
+  background-position: 30px 0;
+
+  cursor: pointer;
+}
+
+.stories__action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 440px;
+  padding-bottom: 30px;
+
+  font-family: 'Neucha', cursive;
+  font-size: 28px;
+
+  background: #fff;
+}
+
+.stories__action__arrow {
+  height: 75px;
+  width: 30px;
+  margin-top: -5px;
+  margin-bottom: 15px;
+
+  background: transparent url(../img/arrow.png);
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.stories__action__text-first {
+  padding: 15px;
+}
+
+.stories__action__text-second {
+  padding-bottom: 15px;
+}
+
+.stories__action__text-forth {
+  padding-bottom: 8px;
+}
+
+.stories__action__text-fifth {
+  padding-bottom: 30px;
+}
+
+.stories__action__text-sending {
+  padding-bottom: 0px;
+  margin-top: -45px;
+}
+
+.stories__action__text-error {
+  padding-bottom: 0px;
+  margin-top: 45px;
+}
+
+.stories__action__text-nohistory {
+  padding-bottom: 15px;
+  margin-top: -25px;
+}
+
+.stories__action__text-preparing {
+  padding-bottom: 0px;
+  margin-top: 50px;
+}
+
+.faded {
+  color: #777;
+}
+
+.stories__action__counter {
+  color: #777;
+  font-size: 162px;
+}
+
+.stories__action__web-cam {
+  height: 60px;
+  width: 60px;
+  margin-top: 15px;
+
+  cursor: pointer;
+  background: url(../img/record.png);
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.stories__action__web-cam:hover {
+  background-position: 180px 0;
+}
+
+.stories__action__video {
+  width: 390px;
+  height: 290px;
+  margin-top: 35px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+
+  background: #f2f2f2;
+}
+
+.stories__action__progress-bar:indeterminate {
+  display: none;
+}
+
+.stories__action__progress-bar {
+  display: block;
+  width: 390px;
+  height: 8px;
+  overflow: hidden;
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+  margin-left: 5px;
+
+  background: #f2f2f2;
+}
+
+.progress-bar--recording::-webkit-progress-value {
+  background-color: #dd0071;
+}
+
+.progress-bar--watching::-webkit-progress-value {
+  background: #7eb924;
+}
+
+.stories__action__sending {
+  background: url(../img/sending.png);
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+  margin: 20px 0;
+}
+
+.waiting {
+  margin-top: 10px;
+
+  background-position: 60px 0;
+}
+
+.error {
+  margin-bottom: 10px;
+
+  background-position: 120px 0;
+}
+
+.success {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  background-position: 0 0;
+}
+
+.seen {
+  animation: fading 1s forwards;
+}
+
+@keyframes fading {
+  from {
+    opacity: 1;
+  }
+  70% {
+    width: 64px;
+    height: 64px;
+  }
+  to {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+
+[data-mode=empty] .stories__action > :not(.stories__action__empty) {
+  display: none;
+}
+
+[data-mode=view] .stories__action > :not(.stories__action__view) {
+  display: none;
+}
+
+[data-mode=preparing] .stories__action > :not(.stories__action__preparing) {
+  display: none;
+}
+
+[data-mode=preparing] .stories__slider__web-cam,
+[data-mode=sending] .stories__slider__web-cam,
+[data-mode=sended] .stories__slider__web-cam {
+  background-position: 120px 0;
+}
+
+[data-mode=recording] .stories__action > :not(.stories__action__recording) {
+  display: none;
+}
+
+[data-mode=recording] .stories__slider__web-cam {
+  background-position: 60px 0;
+}
+
+[data-mode=error] .stories__action > :not(.stories__action__error) {
+  display: none;
+}
+
+[data-mode=sending] .stories__action > :not(.stories__action__sending) {
+  display: none;
+}
+
+[data-mode=sended] .stories__action > :not(.stories__action__sended) {
+  display: none;
+}
