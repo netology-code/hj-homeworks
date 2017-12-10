@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="page-header clearfix">
+      <div class="logo">
+        <a href="#/"><img src="img/logo.png" width="300" height="36" alt="Логотип"></a>
+      </div>
+      <div class="search">
+        <form action="" method="post" class="search__form ng-pristine ng-valid">
+          <input class="search__input ng-pristine ng-untouched ng-valid" ng-model="search" type="search" name="q" placeholder="Поиск, скорее всего, не работает"><i class="fa fa-search"></i>
+        </form>
+        <div class="search__enter"><img src="img/enter.png" width="12" height="23" alt="Enter"></div>
+      </div>
+    </header>
+    <section class="section ng-scope">
+      <h1 class="section__title">Мы издаем книги — вы их можете не читать</h1>
+
+      <div class="section__content">
+        <div class="section__wrap clearfix">
+          <div class="flex">
+            <div class="big-book">
+              <div class="big-book__book">
+                <img class="big-book__img" alt="book" src="./i/books/cover-large/iam.png">
+                <div class="big-book__eye">
+                  <div class="big-book__pupil"></div>
+                </div>
+              </div>
+              <p class="big-book__text ng-binding"></p>
+            </div>
+
+            <div class="wrap-left">
+              <div class="elem-with-img ng-scope" ng-repeat="review in book.reviews">
+                <img src="./i/authors/zoidberg.png" width="207" height="185" alt="Доктор Джон Зоидберг">
+                <p class="elem-with-img__text elem-with-img__text--bender ng-binding">Под воздействием магнитного поля теряет волю и начинает исполнять народные песни в стиле кантри</p>
+              </div>
+              <div class="elem-with-img ng-scope" ng-repeat="review in book.reviews">
+                <img src="./i/authors/farnsworth.png" width="207" height="185" alt="Хьюберт Фарнсворт">
+                <p class="elem-with-img__text elem-with-img__text--bender ng-binding">Приятно видеть, что достижения всей твоей жизни помещаются на трех страницах.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrap-right">
+            <div class="elem-with-img ng-scope" ng-repeat="feature in book.features">
+              <img src="./i/books/features/2b.png" width="207" height="185" alt="магнит">
+              <p class="elem-with-img__text ng-binding">Из книги вы узнаете код уничтожения Бендера</p>
+            </div>
+            <div class="elem-with-img ng-scope" ng-repeat="feature in book.features">
+              <img src="./i/books/features/h-word.png" width="207" height="185" alt="магнит">
+              <p class="elem-with-img__text ng-binding">Впридачу брошюра с горячими словами Бендера</p>
+            </div>
+          </div>
+        </div>
+        <div class="btn">
+          <a class="btn__link" ng-href="#/order/fbb-0008" href="#/order/fbb-0008">Купить за жалкие <fbb-price item="book" currency="currency" class="ng-binding ng-isolate-scope">736Ƶ</fbb-price></a>
+          <p class="btn__text-under">Наши цены самые непредсказуемые и формируются нашим уборщиком Скраффи</p>
+          <img class="btn__under-img" src="img/skaffi.png" width="70" height="70" alt="skaffi">
+        </div>
+      </div>
+    </section>
+    <a href="#/about">
+      <img class="footer-img" src="img/logo-footer.png" width="300" height="193" alt="logo">
+    </a>
+  </div>
+  <script src="./js/animation.js"></script>
+</body>
+</html>
