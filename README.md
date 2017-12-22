@@ -19,9 +19,9 @@
 
 ## Требования
 
-+ браузер,
-+ редактор кода, например [Atom][3],
-+ система контроля версий [git][4], установленная локально,
++ браузер;
++ редактор кода, например, [Atom][3];
++ система контроля версий [git][4], установленная локально;
 + аккаунт на [GitHub][1] или [BitBucket][2].
 
 ## Начало работы
@@ -29,7 +29,7 @@
 1. Клонировать репозиторий с домашними заданиями `git clone https://github.com/netology-code/hj-homeworks.git`.
 2. Перейти в папку `cd hj-homeworks`.
 3. Создать репозиторий на [GitHub][1] или [BitBucket][2].
-4. Добавить репозиторий в проект `git remote add homeworks %repo-url%`, где `%repo-url%` адрес созданного репозитория.
+4. Добавить репозиторий в проект `git remote add homeworks %repo-url%`, где `%repo-url%` — адрес созданного репозитория.
 
 ## Решение задач
 
@@ -41,5 +41,5 @@
 [0]: http://netology.ru/
 [1]: https://github.com/
 [2]: https://bitbucket.org/
-[3]: https://atom.io
+[3]: https://atom.io/
 [4]: https://git-scm.com/

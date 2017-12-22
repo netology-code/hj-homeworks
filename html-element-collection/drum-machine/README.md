@@ -4,7 +4,7 @@
 
 ## Описание
 
-При клике на кнопки `<li class="drum-kit__drum">` с названием звука воспроизвести соответствующий звук.
+При клике на кнопки `<li class="drum-kit__drum">` с названием звука воспроизвести соответствующий звук:
 
 ![Ударная установка](./res/drum-machine.png)
 
@@ -13,12 +13,6 @@
 Для проигрывания звука следует обращаться к тегу `audio`, установленному в кнопке.
 
 ## Материалы
-
-### Реализация
-
-В онлайн-песочнице на [CODEPEN](https://codepen.io/solarrust/pen/NpoQLB).
-
-В репозитории на [GitHub](https://github.com/netology-code/hj-homeworks/tree/master/html-element-collection/drum-machine).
 
 ### Звуки для ударной установки
 
@@ -34,38 +28,37 @@
 
 6. [Звук Ride](https://netology-code.github.io/hj-homeworks/html-element-collection/drum-machine/wav/ride.wav)
 
-### Инструкция по выполнению домашнего задания
+## Реализация
 
-#### В онлайн-песочнице
+### В песочнице CODEPEN
 
-Потребуется: только ваш браузер.
+В онлайн-песочнице на [CODEPEN](https://codepen.io/solarrust/pen/NpoQLB).
+
+### Локально с использованием git
+
+В репозитории на [GitHub](https://github.com/netology-code/hj-homeworks/tree/master/html-element-collection/drum-machine).
+
+## Инструкция по выполнению домашнего задания
+
+### В онлайн-песочнице
+
+Потребуется только ваш браузер.
 
 1. Открыть код в [песочнице](https://codepen.io/solarrust/pen/NpoQLB).
-
-2. Нажать на кнопку «Fork».
-
+2. Нажать кнопку «Fork».
 3. Выполнить задание.
-
 4. Нажать кнопку «Save».
-
 5. Скопировать адрес страницы, открытой в браузере.
-
 6. Прислать скопированную ссылку через личный кабинет на сайте [netology.ru](http://netology.ru/).    
 
-#### Локально
+### Локально
 
-Потребуется: браузер, редактор кода, система контроля версий [git](https://git-scm.com), установленная локально, и аккаунт на [GitHub](https://github.com/) или [BitBucket](https://bitbucket.org/).
+Потребуются: браузер, редактор кода, система контроля версий [git](https://git-scm.com), установленная локально, и аккаунт на [GitHub](https://github.com/) или [BitBucket](https://bitbucket.org/).
 
 1. Клонировать репозиторий с домашними заданиями `git clone https://github.com/netology-code/hj-homeworks.git`.
-
 2. Перейти в папку задания `cd hj-homeworks/browser/errors`.
-
 3. Выполнить задание.
-
 4. Создать репозиторий на [GitHub](https://github.com/) или [BitBucket](https://bitbucket.org/).
-
 5. Добавить репозиторий в проект `git remote add homeworks %repo-url%`, где `%repo-url%` — адрес созданного репозитория.
-
 6. Опубликовать код в репозиторий `homeworks` с помощью команды `git push -u homeworks master`.
-
 7. Прислать ссылку на репозиторий через личный кабинет на сайте [netology.ru](http://netology.ru/).

@@ -4,8 +4,9 @@
 
 ## Описание
 
-Реализовать функционал фотогалереи скейтбордов. При клике на минатюру скейтборда происходит его выбор. При этом пользователь видит увеличенную фотографию и название товара.
-![Галерея скейтбордов](./res/skateboard-gallery.png)
+Реализовать функционал фотогалереи скейтбордов. При клике на минатюру скейтборда происходит его выбор. При этом пользователь видит увеличенную фотографию и название товара:
+
+![Галерея скейтбордов](./res/skateboard-gallery.gif)
 
 ## Интерфейс
 
@@ -16,12 +17,6 @@
 2. Отобразить увеличенную фотографию в теге `<img id="view" class="gallery-view">`, считав ссылку на неё из атрибута `href` тега `a`, при этом сама ссылка не должна открываться.
 
 ## Материалы
-
-### Верстка
-
-В онлайн-песочнице на [CODEPEN](https://codepen.io/solarrust/pen/yMdJRe).
-
-В репозитории на [GitHub](https://github.com/netology-code/hj-homeworks/tree/master/event-object/skateboard-gallery).
 
 ### Изображения для галереи
 
@@ -45,38 +40,37 @@
 6. [USA RESIN](https://netology-code.github.io/hj-homeworks/event-object/skateboard-gallery/images/full/06.jpg)
 7. [EGGBEATER](https://netology-code.github.io/hj-homeworks/event-object/skateboard-gallery/images/full/07.jpg)
 
-### Инструкция по выполнению домашнего задания
+## Реализация
 
-#### В онлайн-песочнице
+### В песочнице CODEPEN
 
-Потребуется: только ваш браузер.
+В онлайн-песочнице на [CODEPEN](https://codepen.io/solarrust/pen/yMdJRe).
+
+### Локально с использованием git
+
+В репозитории на [GitHub](https://github.com/netology-code/hj-homeworks/tree/master/event-object/skateboard-gallery).
+
+## Инструкция по выполнению домашнего задания
+
+### В онлайн-песочнице
+
+Потребуется только ваш браузер.
 
 1. Открыть код в [песочнице](https://codepen.io/solarrust/pen/yMdJRe).
-
-2. Нажать на кнопку «Fork».
-
+2. Нажать кнопку «Fork».
 3. Выполнить задание.
-
 4. Нажать кнопку «Save».
-
 5. Скопировать адрес страницы, открытой в браузере.
-
 6. Прислать скопированную ссылку через личный кабинет на сайте [netology.ru](http://netology.ru/).    
 
-#### Локально
+### Локально
 
-Потребуется: браузер, редактор кода, система контроля версий [git](https://git-scm.com), установленная локально, и аккаунт на [GitHub](https://github.com/) или [BitBucket](https://bitbucket.org/).
+Потребуются: браузер, редактор кода, система контроля версий [git](https://git-scm.com), установленная локально, и аккаунт на [GitHub](https://github.com/) или [BitBucket](https://bitbucket.org/).
 
 1. Клонировать репозиторий с домашними заданиями `git clone https://github.com/netology-code/hj-homeworks.git`.
-
 2. Перейти в папку задания `cd hj-homeworks/event-object/skateboard-gallery`.
-
 3. Выполнить задание.
-
 4. Создать репозиторий на [GitHub](https://github.com/) или [BitBucket](https://bitbucket.org/).
-
 5. Добавить репозиторий в проект `git remote add homeworks %repo-url%`, где `%repo-url%` — адрес созданного репозитория.
-
 6. Опубликовать код в репозиторий `homeworks` с помощью команды `git push -u homeworks master`.
-
 7. Прислать ссылку на репозиторий через личный кабинет на сайте [netology.ru](http://netology.ru/).
