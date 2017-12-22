@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stories</title>
+  <link href="https://fonts.googleapis.com/css?family=Neucha&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="wrapper">
+    <section class="stories" data-mode="empty">
+      <header class="stories__logo">
+        <img class="stories__logo__netology-logo" src="./img/logo.png" alt="Логотип Нетологии">
+      </header>
+      <section class="stories__slider">
+        <button class="stories__slider__web-cam not-active"></button>
+        <ul class="stories__slider__photos-wrapper">
+
+        </ul>
+        <button class="stories__slider__btn-next hidden"></button>
+      </section>
+
+      <section class="stories__action">
+        <div class="stories__action__view">
+          <video class="stories__action__video" autoplay></video>
+          <progress class="stories__action__progress-bar progress-bar--watching" max="100"></progress>
+        </div>
+        <div class="stories__action__recording">
+          <video class="stories__action__video" autoplay loop></video>
+          <progress class="stories__action__progress-bar progress-bar--recording" max="100"></progress>
+        </div>
+        <div class="stories__action__preparing">
+          <p class="stories__action__text-preparing">Включаю камеру...</p>
+          <p class="stories__action__counter">3-2-1</p>
+        </div>
+        <div class="stories__action__empty">
+          <p class="stories__action__text-nohistory">Историй пока нет</p>
+          <div class="stories__action__web-cam"></div>
+          <p class="stories__action__text-third">Запиши свою!</p>
+        </div>
+        <div class="stories__action__error">
+          <p class="stories__action__text-error">Ошибка!</p>
+          <div class="stories__action__sending error"></div>
+          <p class="stories__action__text-third faded"><small>Можно попробовать</small></p>
+          <p class="stories__action__text-third faded"><small>еще раз.</small></p>
+        </div>
+        <div class="stories__action__sending">
+          <p class="stories__action__text-sending">Отправляю</p>
+          <p class="stories__action__text-forth">запись на сервер...</p>
+          <div class="stories__action__sending waiting"></div>
+        </div>
+        <div class="stories_action_sended">
+          <p class="stories__action__text-first">Готово!</p>
+          <div class="stories__action__sending success"></div>
+        </div>
+      </section>
+
+    </section>
+  </div>
+  <script src="./js/recorder.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
