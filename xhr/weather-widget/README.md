@@ -16,7 +16,7 @@
 
 ### В песочнице CODEPEN
 
-В онлайн-песочнице на [CODEPEN](https://codepen.io/solarrust/pen/ZKOvjv).
+В онлайн-песочнице на [CODEPEN](https://codepen.io/Netology/pen/vparxZ).
 
 Перепишите код, написанный в окне JS.
 
@@ -32,7 +32,7 @@
 
 Потребуется только ваш браузер.
 
-1. Открыть код в [песочнице](https://codepen.io/solarrust/pen/ZKOvjv).
+1. Открыть код в [песочнице](https://codepen.io/Netology/pen/vparxZ).
 2. Нажать кнопку «Fork».
 3. Выполнить задание.
 4. Нажать кнопку «Save».

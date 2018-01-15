@@ -47,7 +47,7 @@
 
 Реализуйте функционал на вкладке JS.
 
-В онлайн-песочнице на [CODEPEN](https://codepen.io/dfitiskin/pen/boRpRX).
+В онлайн-песочнице на [CODEPEN](https://codepen.io/Netology/pen/jYppWO).
 
 ### Локально с использованием git
 
@@ -61,7 +61,7 @@
 
 Потребуется только ваш браузер.
 
-1. Открыть код в [песочнице](https://codepen.io/dfitiskin/pen/boRpRX).
+1. Открыть код в [песочнице](https://codepen.io/Netology/pen/jYppWO).
 2. Нажать кнопку «Fork».
 3. Выполнить задание.
 4. Нажать кнопку «Save».

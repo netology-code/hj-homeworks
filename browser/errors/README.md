@@ -20,7 +20,7 @@
 
 ### В песочнице CODEPEN
 
-В онлайн-песочнице на [CODEPEN](https://codepen.io/dfitiskin/pen/LWMvOb).
+В онлайн-песочнице на [CODEPEN](https://codepen.io/Netology/pen/vparBy).
 
 ### Локально с использованием git
 
@@ -32,7 +32,7 @@
 
 Потребуется только ваш браузер.
 
-1. Открыть код в [песочнице](https://codepen.io/dfitiskin/pen/LWMvOb).
+1. Открыть код в [песочнице](https://codepen.io/Netology/pen/vparBy).
 2. Нажать кнопку «Fork».
 3. Выполнить задание.
 4. Нажать кнопку «Save».

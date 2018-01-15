@@ -42,7 +42,7 @@
 
 Реализуйте функционал во вкладке JS.
 
-В онлайн-песочнице на [CODEPEN](https://codepen.io/dfitiskin/pen/PKNgmL).
+В онлайн-песочнице на [CODEPEN](https://codepen.io/Netology/pen/vparbd).
 
 ### Локально с использованием git
 
@@ -56,7 +56,7 @@
 
 Потребуется только ваш браузер.
 
-1. Открыть код в [песочнице](https://codepen.io/dfitiskin/pen/PKNgmL).
+1. Открыть код в [песочнице](https://codepen.io/Netology/pen/vparbd).
 2. Нажать кнопку «Fork».
 3. Выполнить задание.
 4. Нажать кнопку «Save».

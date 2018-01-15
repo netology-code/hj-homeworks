@@ -36,7 +36,7 @@
 
 Реализуйте компонент во вкладке JS.
 
-В онлайн-песочнице на [CODEPEN](https://codepen.io/solarrust/pen/awOyMY).
+В онлайн-песочнице на [CODEPEN](https://codepen.io/Netology/pen/QaBxMz).
 
 ### Локально с использованием git
 
@@ -50,7 +50,7 @@
 
 Потребуется только ваш браузер.
 
-1. Открыть код в [песочнице](https://codepen.io/solarrust/pen/awOyMY).
+1. Открыть код в [песочнице](https://codepen.io/Netology/pen/QaBxMz).
 2. Нажать кнопку «Fork».
 3. Выполнить задание.
 4. Нажать кнопку «Save».

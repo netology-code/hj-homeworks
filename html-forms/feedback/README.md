@@ -30,7 +30,7 @@
 
 ### В песочнице CODEPEN
 
-В онлайн-песочнице на [CODEPEN](https://codepen.io/solarrust/pen/wdNQOY).
+В онлайн-песочнице на [CODEPEN](https://codepen.io/Netology/pen/EopRvV).
 
 ### Локально с использованием git
 
@@ -42,7 +42,7 @@
 
 Потребуется только ваш браузер.
 
-1. Открыть код в [песочнице](https://codepen.io/solarrust/pen/wdNQOY).
+1. Открыть код в [песочнице](https://codepen.io/Netology/pen/EopRvV).
 2. Нажать кнопку «Fork».
 3. Выполнить задание.
 4. Нажать кнопку «Save».
