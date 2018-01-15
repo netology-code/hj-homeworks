@@ -50,7 +50,7 @@
 
 ### В песочнице CODEPEN
 
-В онлайн-песочнице на [CODEPEN](https://codepen.io/solarrust/pen/QpobMe).
+В онлайн-песочнице на [CODEPEN](https://codepen.io/Netology/pen/eyjKNo).
 
 ### Локально с использованием git
 
@@ -62,7 +62,7 @@
 
 Потребуется только ваш браузер.
 
-1. Открыть код в [песочнице](https://codepen.io/solarrust/pen/QpobMe).
+1. Открыть код в [песочнице](https://codepen.io/Netology/pen/eyjKNo).
 2. Нажать кнопку «Fork».
 3. Выполнить задание.
 4. Нажать кнопку «Save».

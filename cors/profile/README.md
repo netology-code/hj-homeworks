@@ -50,7 +50,7 @@
 
 Реализуйте функционал вкладке на JS.
 
-В онлайн-песочнице на [CODEPEN](https://codepen.io/dfitiskin/pen/qXRLxO).
+В онлайн-песочнице на [CODEPEN](https://codepen.io/Netology/pen/jYppNN).
 
 ### Локально с использованием git
 
@@ -64,7 +64,7 @@
 
 Потребуется только ваш браузер.
 
-1. Открыть код в [песочнице](https://codepen.io/dfitiskin/pen/qXRLxO).
+1. Открыть код в [песочнице](https://codepen.io/Netology/pen/jYppNN).
 2. Нажать кнопку «Fork».
 3. Выполнить задание.
 4. Нажать кнопку «Save».

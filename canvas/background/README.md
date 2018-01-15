@@ -65,7 +65,7 @@ const { x, y } = nextPoint(100, 100, Date.now());
 
 Реализуйте функционал во вкладке JS.
 
-В онлайн-песочнице на [CODEPEN](https://codepen.io/dfitiskin/pen/ZJazgm).
+В онлайн-песочнице на [CODEPEN](https://codepen.io/Netology/pen/ypqqyN).
 
 ### Локально с использованием git
 
@@ -79,7 +79,7 @@ const { x, y } = nextPoint(100, 100, Date.now());
 
 Потребуется только ваш браузер.
 
-1. Открыть код в [песочнице](https://codepen.io/dfitiskin/pen/ZJazgm).
+1. Открыть код в [песочнице](https://codepen.io/Netology/pen/ypqqyN).
 2. Нажать кнопку «Fork».
 3. Выполнить задание.
 4. Нажать кнопку «Save».

@@ -49,7 +49,7 @@
 
 ### В песочнице CODEPEN
 
-В онлайн-песочнице на [CODEPEN](https://codepen.io/missis_sippi/pen/JrmWGz).
+В онлайн-песочнице на [CODEPEN](https://codepen.io/Netology/pen/vparmZ).
 
 ### Локально с использованием git
 
@@ -61,7 +61,7 @@
 
 Потребуется только ваш браузер.
 
-1. Открыть код в [песочнице](https://codepen.io/missis_sippi/pen/JrmWGz).
+1. Открыть код в [песочнице](https://codepen.io/Netology/pen/vparmZ).
 2. Нажать кнопку «Fork».
 3. Выполнить задание.
 4. Нажать кнопку «Save».

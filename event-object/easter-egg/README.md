@@ -26,7 +26,7 @@
 
 ### В песочнице CODEPEN
 
-В онлайн-песочнице на [CODEPEN](https://codepen.io/solarrust/pen/MpMxwd).
+В онлайн-песочнице на [CODEPEN](https://codepen.io/Netology/pen/OzwENz).
 
 ### Локально с использованием git
 
@@ -38,7 +38,7 @@
 
 Потребуется только ваш браузер.
 
-1. Открыть код в [песочнице](https://codepen.io/solarrust/pen/MpMxwd).
+1. Открыть код в [песочнице](https://codepen.io/Netology/pen/OzwENz).
 2. Нажать кнопку «Fork».
 3. Выполнить задание.
 4. Нажать кнопку «Save».
