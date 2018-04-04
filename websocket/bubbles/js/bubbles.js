@@ -1,4 +1,4 @@
-'use strinct';
+'use strict';
 
 function showBubbles(target) {
   if (!target || !(target instanceof WebSocket)) {
