@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: Verdana;
+}
+
+.sprite-generator {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.sprite-generator__result {
+  margin-top: 15px;
+  display: flex;
+}
+.images__added-count {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.sprite-generator__preview {
+  flex-grow: 1;
+  position: relative;
+  border: 1px solid #ccc;
+}
+.sprite-generator__result-image {
+  max-width: 100%;
+}
+
+.sprite-generator__code {
+  flex-grow: 1;
+}
