@@ -14,7 +14,7 @@
 
 ## Интерфейс
 
-1. Каждый глаз имеет свою обсласть. Область левого глаза имеет класс `cat_position_for_left_eye`, а область правого глаза имеет класс `cat_position_for_right_eye`.
+1. Каждый глаз имеет свою область. Область левого глаза имеет класс `cat_position_for_left_eye`, а область правого глаза имеет класс `cat_position_for_right_eye`.
 2. Оба глаза имеют одинаковый класс `cat_eye`. 
 3. Левый глаз имеет класс `cat_eye_left`.
 4. Правый глаз имеет класс `cat_eye_right`.
@@ -27,7 +27,7 @@
 
 ### В песочнице CODEPEN
 
-В онлайн-песочнице на [CODEPEN](https://codepen.io/Traktaran/pen/wxeQvE).
+В онлайн-песочнице на [CODEPEN](https://codepen.io/Netology/pen/EpejoB).
 
 ### Локально с использованием git
 
