@@ -1,0 +1,17 @@
+img.logo{
+  cursor: move;
+  width: 100px;
+  position: absolute;
+  z-index: 1;
+}
+img.logo.moving{
+  pointer-events: none;
+}
+#trash_bin{
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -100px; 
+}

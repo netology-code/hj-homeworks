@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instagram Layout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="layout" id="layout">
+        <h2 class="layout__title">iLayout</h2>
+        <div class="layout__hint">Перетащите изображения в соответстующие части коллажа, нажмите на кнопку «Получить коллаж» и наслаждайтесь магией!</div>
+        <div class="layout__positions">
+            <div class="layout__item layout__item_left"></div>
+            <div class="layout__item layout__item_top"></div>
+            <div class="layout__item layout__item_bottom"></div>
+        </div>
+        <div class="layout__controls">
+            <button class="layout__button">Получить коллаж</button>
+        </div>
+        <textarea class="layout__result" readonly placeholder="Здесь будет размещён HTML-код вашего коллажа"></textarea>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
